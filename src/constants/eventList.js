@@ -1,3 +1,5 @@
+import links from "./links";
+
 const EventList = [
   {
     date: "24-08-2021",
@@ -5,14 +7,14 @@ const EventList = [
     explanation: (
       <p>
         Básicamente me dio mucha envidia de{" "}
-        <a href="https://alvaro.gs">Álvaro</a> y le copié la idea
+        <a href="https://alvaro.gs">Álvaro</a> y le copié la idea.
       </p>
     ),
-    isFinal: false,
+    type: "MISCELLANEOUS",
   },
   {
     date: "12-07-2021",
-    title: "Presento mi TFG: NeptunUS",
+    title: "Presento mi TFG, NeptunUS",
     explanation: (
       <p>
         Después de mucho sufrimiento, conseguí presentar mi Trabajo de Fin de
@@ -27,22 +29,37 @@ const EventList = [
         <br />
         <br />
         Puedes ver o descargar la memoria del TFG{" "}
-        <a
-          href="https://drive.google.com/file/d/18ZwlWohkn2NMDO4Al5yO1SmDl7r19ZaD/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={links.MemoriaTFG} target="_blank" rel="noreferrer">
           aquí
         </a>
         .
       </p>
     ),
-    isFinal: false,
+    type: "STUDIES",
+  },
+  {
+    date: "05-07-2021",
+    title: "Comienzo a trabajar en ¡QuéBueno!",
+    extra: "Empleo actual",
+    explanation: (
+      <p>
+        Tras casi un año de trabajo en Solera, comencé a buscar otras
+        oportunidades que me permitieran estar más cerca de todos los ambítos
+        del desarrollo de producto. Y lo que me contaron en QuéBueno me encantó.
+        <br />
+        <br />
+        Mi trabajo aquí consiste en el desarrollo de diversas aplicaciones,
+        tanto web como móviles utilizando React y React-Native. La mayor parte
+        de las aplicaciones utilizan Firebase como base de datos. Además,
+        algunas tienen backends basados en Java o Ruby on Rails.
+      </p>
+    ),
+    type: "WORK",
   },
   {
     date: "10-05-1998",
     title: "Nace esta persona",
-    isFinal: true,
+    type: "MISCELLANEOUS",
   },
 ];
 

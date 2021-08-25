@@ -1,8 +1,21 @@
+.HeaderContainer {
+  text-align: right;
+}
+
 .Header {
-  padding-left: 2em;
-  text-align: center;
+  margin: auto;
+  width: 32%;
+}
+
+.OverTitle {
+  text-align: left;
 }
 
 .Title {
   font-size: 3em;
+  text-align: center;
+}
+
+.UnderTitle {
+  text-align: right;
 }

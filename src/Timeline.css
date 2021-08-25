@@ -1,15 +1,28 @@
 .data {
-  margin-left: 2em;
+  margin-left: 1em;
   border-left: 3px dashed #b4b4b4;
   padding-left: 1em;
   padding-right: 1em;
+  margin-right: 1em;
+  text-align: justify;
 }
 
 .container {
   margin-left: 2em;
 }
 
-.date {
+.subtitle {
   font-family: "Courier New", Courier, monospace;
   display: inline;
+}
+
+.buttons {
+  padding: 1em;
+  text-align: center;
+}
+
+.cv-shove {
+  font-size: small;
+  text-align: center;
+  font-style: italic;
 }
