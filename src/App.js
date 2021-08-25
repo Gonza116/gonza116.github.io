@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import LinkTest from "./LinkTest";
+import Timeline from "./Timeline";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         </Route>
         <Route path="/">
           <Header />
+          <Timeline />
         </Route>
       </Switch>
     </Router>
