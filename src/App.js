@@ -1,12 +1,19 @@
-import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./Header";
+import LinkTest from "./LinkTest";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hola</h1>
-      <p>En algún momento se vendrán cositas</p>
-      <p>~gongranes</p>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/link-test">
+          <LinkTest />
+        </Route>
+        <Route path="/">
+          <Header />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
