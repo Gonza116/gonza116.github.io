@@ -1,21 +1,23 @@
-.HeaderContainer {
-  text-align: right;
-}
-
-.Header {
-  margin: auto;
-  width: 32%;
-}
-
-.OverTitle {
-  text-align: left;
-}
-
-.Title {
-  font-size: 3em;
+.header-container {
+  margin-top: 1em;
+  width: 100%;
   text-align: center;
 }
 
-.UnderTitle {
+.header-left {
+  width: 33%;
+  text-align: left;
+  display: inline-block;
+}
+
+.header-centre {
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+}
+
+.header-right {
+  width: 33%;
   text-align: right;
+  display: inline-block;
 }

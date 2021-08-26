@@ -1,4 +1,4 @@
-.data {
+.timeline-data {
   margin-left: 1em;
   border-left: 3px dashed #b4b4b4;
   padding-left: 1em;
@@ -7,16 +7,16 @@
   text-align: justify;
 }
 
-.container {
+.timeline-container {
   margin-left: 2em;
 }
 
-.subtitle {
+.timeline-subtitle {
   font-family: "Courier New", Courier, monospace;
   display: inline;
 }
 
-.buttons {
+.timeline-buttons-container {
   padding: 1em;
   text-align: center;
 }

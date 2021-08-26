@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Timeline.css";
-import EventList from "./constants/eventList";
 import links from "./constants/links";
+import { useTranslation } from "react-i18next";
 
-const getFilteredEvents = (filter) => {
+const getFilteredEvents = (EventList, filter) => {
   switch (filter) {
     case "ALL":
       return EventList;
@@ -22,52 +22,57 @@ const getFilteredEvents = (filter) => {
   return EventList;
 };
 
-const Timeline = () => {
-  const [events, setEvents] = useState(getFilteredEvents("ALL"));
+const Timeline = ({ EventList }) => {
+  const { t } = useTranslation();
+  const [events, setEvents] = useState(getFilteredEvents(EventList, "ALL"));
   const [filter, setFilter] = useState("ALL");
+
+  useEffect(() => {
+    setEvents(getFilteredEvents(EventList, filter));
+  }, [filter, EventList]);
 
   return (
     <div>
       <br />
-      <div className="buttons">
+      <div className="timeline-buttons-container">
         <button
           onClick={() => {
-            setEvents(getFilteredEvents("ALL"));
             setFilter("ALL");
+            setEvents(getFilteredEvents(EventList, "ALL"));
           }}
         >
-          Todos los eventos
+          {t("allEvents")}
         </button>
         <button
           onClick={() => {
-            setEvents(getFilteredEvents("WORK"));
-            setFilter("WORK");
-          }}
-        >
-          Solo trabajo
-        </button>
-        <button
-          onClick={() => {
-            setEvents(getFilteredEvents("STUDIES+WORK"));
             setFilter("STUDIES+WORK");
+            setEvents(getFilteredEvents(EventList, "STUDIES+WORK"));
           }}
         >
-          Estudio y trabajo
+          {t("workAndStudiesEvents")}
         </button>
         <button
           onClick={() => {
-            setEvents(getFilteredEvents("STUDIES"));
-            setFilter("STUDIES");
+            setFilter("WORK");
+            setEvents(getFilteredEvents(EventList, "WORK"));
           }}
         >
-          Solo estudio
+          {t("workEvents")}
+        </button>
+        <button
+          onClick={() => {
+            setFilter("STUDIES");
+            setEvents(getFilteredEvents(EventList, "STUDIES"));
+          }}
+        >
+          {t("studiesEvents")}
         </button>
       </div>
       {filter !== "ALL" && (
         <p className="cv-shove">
-          Si quieres, también puedes descargarte mi currículum{" "}
+          {t("cv-timeline")}
           <a href={links.CV} target="_blank" rel="noreferrer">
-            aquí
+            {t("here")}
           </a>
           .
         </p>
@@ -97,15 +102,15 @@ const Event = ({ explanation, date, title, extra }, isFinal) => {
     );
   }
   return (
-    <div className="container">
-      <p className="subtitle">{date}: </p>
+    <div className="timeline-container">
+      <p className="timeline-subtitle">{date}: </p>
       <b>{title}</b>
       {extra && (
-        <p className="subtitle">
+        <p className="timeline-subtitle">
           <i> {extra}</i>
         </p>
       )}
-      <div className="data">{explanation}</div>
+      <div className="timeline-data">{explanation}</div>
     </div>
   );
 };

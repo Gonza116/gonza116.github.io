@@ -1,11 +1,23 @@
-.theme-dark {
+.theme-default {
   --text: #dadada;
   --background: #1f2023;
 }
 
-.theme-light {
+.theme-alternate {
   --text: #1f2023;
   --background: #dadada;
+}
+
+@media (prefers-color-scheme: light) {
+  .theme-default {
+    --text: #1f2023;
+    --background: #dadada;
+  }
+
+  .theme-alternate {
+    --text: #dadada;
+    --background: #1f2023;
+  }
 }
 
 body {
