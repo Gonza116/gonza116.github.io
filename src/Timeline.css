@@ -9,9 +9,26 @@
 
 .timeline-container {
   margin-left: 2em;
+  align-items: stretch;
 }
 
-.timeline-subtitle {
+.timeline-top-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.timeline-date {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  width: auto;
+}
+
+.timeline-subcontainer {
+  display: inline-block;
+  width: 69%;
+}
+
+.timeline-extra {
   font-family: "Courier New", Courier, monospace;
   display: inline;
 }

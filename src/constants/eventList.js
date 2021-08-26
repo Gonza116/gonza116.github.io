@@ -61,6 +61,17 @@ export const EventListES = [
     type: "WORK",
   },
   {
+    date: "26-06-2020",
+    title: "Volví a Sevilla del Erasmus",
+    extra: "(10 meses)",
+    type: "STUDIES",
+  },
+  {
+    date: "26-08-2019",
+    title: "Empecé el Erasmus en Skövde (Suecia)",
+    type: "STUDIES",
+  },
+  {
     date: "10-05-1998",
     title: "Nací. Y todo eso.",
     type: "MISCELLANEOUS",
@@ -126,6 +137,17 @@ export const EventListEN = [
       </p>
     ),
     type: "WORK",
+  },
+  {
+    date: "26-06-2020",
+    title: "Came back to Seville from the Erasmus",
+    extra: "(10 months)",
+    type: "STUDIES",
+  },
+  {
+    date: "26-08-2019",
+    title: "Started Erasmus in Skövde (Sweden)",
+    type: "STUDIES",
   },
   {
     date: "10-05-1998",

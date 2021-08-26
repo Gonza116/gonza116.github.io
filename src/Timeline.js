@@ -92,7 +92,16 @@ const Timeline = ({ EventList }) => {
 
 export default Timeline;
 
-const Event = ({ explanation, date, title, extra }, isFinal) => {
+const Event = ({ explanation, date, title, extra, isFinal }) => {
+  console.log("Condición: ", !isFinal && (!explanation || explanation === ""));
+  console.log("isFinal: ", isFinal);
+  console.log("!isFinal: ", !isFinal);
+  console.log("!explanation: ", !explanation);
+  console.log('explanation === "": ', explanation === "");
+  console.log(
+    '!explanation || explanation === "")',
+    !explanation || explanation === ""
+  );
   if (!isFinal && (!explanation || explanation === "")) {
     explanation = (
       <div>
@@ -103,13 +112,17 @@ const Event = ({ explanation, date, title, extra }, isFinal) => {
   }
   return (
     <div className="timeline-container">
-      <p className="timeline-subtitle">{date}: </p>
-      <b>{title}</b>
-      {extra && (
-        <p className="timeline-subtitle">
-          <i> {extra}</i>
-        </p>
-      )}
+      <div className="timeline-top-container">
+        <p className="timeline-date">{date}: </p>
+        <div className="timeline-subcontainer">
+          <b>{title}</b>
+          {extra && (
+            <p className="timeline-extra">
+              <i> {extra}</i>
+            </p>
+          )}
+        </div>
+      </div>
       <div className="timeline-data">{explanation}</div>
     </div>
   );
