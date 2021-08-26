@@ -1,0 +1,13 @@
+.footer-container {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.footer-principal {
+  font-size: x-small;
+}
+
+.footer-quote {
+  font-size: x-small;
+  font-style: italic;
+}
