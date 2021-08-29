@@ -1,22 +1,26 @@
 .theme-default {
   --text: #dadada;
   --background: #1f2023;
+  --accent: #ecb14d;
 }
 
 .theme-alternate {
   --text: #1f2023;
   --background: #dadada;
+  --accent: #4687dc;
 }
 
 @media (prefers-color-scheme: light) {
   .theme-default {
     --text: #1f2023;
     --background: #dadada;
+    --accent: #4687dc;
   }
 
   .theme-alternate {
     --text: #dadada;
     --background: #1f2023;
+    --accent: #ecb14d;
   }
 }
 
@@ -32,16 +36,16 @@ body {
 }
 
 a:link {
-  color: var(--text);
+  color: var(--accent);
 }
 a:visited {
-  color: var(--text);
+  color: var(--accent);
 }
 a:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 a:active {
-  color: var(--text);
+  color: var(--accent);
 }
 
 code {

@@ -36,6 +36,11 @@ const Timeline = ({ EventList }) => {
       <br />
       <div className="timeline-buttons-container">
         <button
+          className={
+            filter === "ALL"
+              ? "timeline-filter-button-selected"
+              : "timeline-filter-button"
+          }
           onClick={() => {
             setFilter("ALL");
             setEvents(getFilteredEvents(EventList, "ALL"));
@@ -44,6 +49,11 @@ const Timeline = ({ EventList }) => {
           {t("allEvents")}
         </button>
         <button
+          className={
+            filter === "STUDIES+WORK"
+              ? "timeline-filter-button-selected"
+              : "timeline-filter-button"
+          }
           onClick={() => {
             setFilter("STUDIES+WORK");
             setEvents(getFilteredEvents(EventList, "STUDIES+WORK"));
@@ -52,6 +62,11 @@ const Timeline = ({ EventList }) => {
           {t("workAndStudiesEvents")}
         </button>
         <button
+          className={
+            filter === "WORK"
+              ? "timeline-filter-button-selected"
+              : "timeline-filter-button"
+          }
           onClick={() => {
             setFilter("WORK");
             setEvents(getFilteredEvents(EventList, "WORK"));
@@ -60,6 +75,11 @@ const Timeline = ({ EventList }) => {
           {t("workEvents")}
         </button>
         <button
+          className={
+            filter === "STUDIES"
+              ? "timeline-filter-button-selected"
+              : "timeline-filter-button"
+          }
           onClick={() => {
             setFilter("STUDIES");
             setEvents(getFilteredEvents(EventList, "STUDIES"));
@@ -92,16 +112,8 @@ const Timeline = ({ EventList }) => {
 
 export default Timeline;
 
-const Event = ({ explanation, date, title, extra, isFinal }) => {
-  console.log("Condición: ", !isFinal && (!explanation || explanation === ""));
-  console.log("isFinal: ", isFinal);
-  console.log("!isFinal: ", !isFinal);
-  console.log("!explanation: ", !explanation);
-  console.log('explanation === "": ', explanation === "");
-  console.log(
-    '!explanation || explanation === "")',
-    !explanation || explanation === ""
-  );
+const Event = ({ explanation, date, title, extra, technologies, isFinal }) => {
+  const { t } = useTranslation();
   if (!isFinal && (!explanation || explanation === "")) {
     explanation = (
       <div>
@@ -123,7 +135,14 @@ const Event = ({ explanation, date, title, extra, isFinal }) => {
           )}
         </div>
       </div>
-      <div className="timeline-data">{explanation}</div>
+      <div className="timeline-data">
+        {technologies && (
+          <p className="timeline-extra">
+            <b>{t("technologies")}: </b> {technologies}
+          </p>
+        )}
+        {explanation}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,9 @@
-.toggle {
+.language-select {
   margin-right: 2em;
   background-color: var(--background);
   border: 1px;
   border-style: solid;
   border-color: var(--accent);
+  color: var(--accent);
+  font-size: large;
 }

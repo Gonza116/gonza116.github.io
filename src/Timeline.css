@@ -36,10 +36,32 @@
 .timeline-buttons-container {
   padding: 1em;
   text-align: center;
+  display: flex;
+  width: 60%;
+  margin: auto;
 }
 
 .cv-shove {
   font-size: small;
   text-align: center;
   font-style: italic;
+}
+
+.timeline-filter-button {
+  background-color: var(--background);
+  color: var(--text);
+  width: 25%;
+  border: none;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+}
+
+.timeline-filter-button-selected {
+  background-color: var(--background);
+  color: var(--accent);
+  width: 25%;
+  border: none;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  font-weight: bold;
 }

@@ -1,5 +1,6 @@
 import i18n from "../i18n";
 import { EventListES, EventListEN } from "../constants/eventList";
+import "./LanguageSelector.css";
 
 const LanguageSelector = ({ setEventList }) => {
   const changeLanguage = (lng) => {
@@ -12,6 +13,7 @@ const LanguageSelector = ({ setEventList }) => {
   };
   return (
     <select
+      className="language-select"
       onChange={(e) => {
         changeLanguage(e.target.value);
       }}
