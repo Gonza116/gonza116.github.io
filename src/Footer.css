@@ -1,14 +1,16 @@
 .footer-container {
-  margin: 1em;
-  margin-bottom: 2em;
-  text-align: center;
+  text-align: left;
+  position: fixed;
+  bottom: 2em;
 }
 
 .footer-principal {
   font-size: x-small;
+  color: var(--accent);
 }
 
 .footer-quote {
   font-size: x-small;
   font-style: italic;
+  color: var(--accent);
 }

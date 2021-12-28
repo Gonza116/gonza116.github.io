@@ -1,17 +1,16 @@
 import "./Header.css";
-import Toggle from "./utils/Toggle";
+// import Toggle from "./utils/Toggle";
 import LanguageSelector from "./utils/LanguageSelector";
 
 const Header = ({ setEventList }) => {
   return (
     <div className="header-container">
-      <div className="header-left">
+      <div className="header-item">
         <LanguageSelector setEventList={setEventList} />
       </div>
-      <div className="header-centre"></div>
-      <div className="header-right">
+      {/* <div className="header-item">
         <Toggle />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,23 +1,10 @@
 .header-container {
   margin: 1em;
+  margin-left: 0em;
   width: 100%;
-  text-align: center;
 }
 
-.header-left {
-  width: 33%;
+.header-item {
   text-align: left;
-  display: inline-block;
-}
-
-.header-centre {
-  width: 33%;
-  text-align: center;
-  display: inline-block;
-}
-
-.header-right {
-  width: 33%;
-  text-align: right;
   display: inline-block;
 }
