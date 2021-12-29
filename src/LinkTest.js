@@ -1,12 +1,12 @@
-import "./Header.css";
+import "./AboutMe.css";
 
 const LinkTest = () => {
   return (
-    <div className="Header">
+    <article className="about-me-container">
       <h1>Funciona</h1>
       <p>Esto es una demostración de que efectivamente el routing funciona</p>
       <p>~gongranes</p>
-    </div>
+    </article>
   );
 };
 

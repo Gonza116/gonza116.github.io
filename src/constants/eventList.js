@@ -72,7 +72,7 @@ export const EventListES = [
         Además, algunas tienen backends basados en Java o Ruby on Rails.
       </p>
     ),
-    type: "WORK",
+    type: "CURRENT",
   },
   {
     date: "02-07-2021",
@@ -233,18 +233,13 @@ export const EventListEN = [
     technologies: "React, React Native, Firebase, Java, Ruby on Rails",
     explanation: (
       <p>
-        After almost a year working on Solera, I started looking for some other
-        opportunities that let me be closer to every aspect of the product
-        developmente. And I loved what I was told on QuéBueno.
-        <br />
-        <br />
-        My job here consists on developing several apps, both for the web and
+        I'm involved in the development of several apps, both for the web and
         for Android/iOS using React and React-Native. Most of these apps use
         Firebase as the databse. Besides, some of them have backends that use
         Java or Ruby on Rails.
       </p>
     ),
-    type: "WORK",
+    type: "CURRENT",
   },
   {
     date: "02-07-2021",

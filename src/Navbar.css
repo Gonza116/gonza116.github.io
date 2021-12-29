@@ -1,10 +1,10 @@
-.header-container {
+.navbar-container {
   margin: 1em;
   margin-left: 0em;
   width: 100%;
 }
 
-.header-item {
+.navbar-item {
   text-align: left;
   display: inline-block;
 }

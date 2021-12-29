@@ -1,9 +1,9 @@
-import "./Footer.css";
+import "./Swirl.css";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Swirl from "./assets/Swirl.svg";
+import SwirlImage from "./assets/Swirl.svg";
 
-const Footer = () => {
+const Swirl = () => {
   const { t } = useTranslation();
   const [easterEgg, setEasterEgg] = useState(false);
   const quotes = [
@@ -14,36 +14,41 @@ const Footer = () => {
   ];
   const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
-  return (
-    <div className="footer-container">
-      {easterEgg && (
+  if (easterEgg) {
+    return (
+      <section className="swirl-container">
         <div
           onClick={() => {
             setEasterEgg(!easterEgg);
           }}
         >
-          <p className="footer-principal">
+          <p className="swirl-text">
             {t("footer-thanks-1")}
             <a href="https://alvaro.gs" target="_blank" rel="noreferrer">
               Álvaro
             </a>{" "}
             {t("footer-thanks-2")}
           </p>
-          <p className="footer-quote">{quote}</p>
+          <p className="swirl-text">
+            <i>{quote}</i>
+          </p>
         </div>
-      )}
-      {!easterEgg && (
+      </section>
+    );
+  } else {
+    return (
+      <figure className="swirl-container">
         <img
-          src={Swirl}
+          src={SwirlImage}
           alt="Swirl"
           style={{ width: "15em" }}
           onClick={() => {
             setEasterEgg(!easterEgg);
           }}
         />
-      )}
-    </div>
-  );
+      </figure>
+    );
+  }
 };
 
-export default Footer;
+export default Swirl;

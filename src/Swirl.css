@@ -1,0 +1,10 @@
+.swirl-container {
+  text-align: left;
+  margin: 0;
+  height: 2vh;
+}
+
+.swirl-text {
+  font-size: x-small;
+  color: var(--red);
+}

@@ -1,7 +1,9 @@
-.Header {
-  margin-top: 30%;
-  margin-bottom: 40%;
+.about-me-container {
   margin-left: 0em;
   font-size: x-large;
   width: 65%;
+}
+
+.gregg-logo {
+  margin: 0;
 }

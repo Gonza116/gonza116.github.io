@@ -1,7 +1,9 @@
 .theme-default {
-  --text: #1480ff;
+  --blue: #1480ff;
+  --blue-background: #1480ff1a;
+  --red: #f06648;
+  --red-background: #f066481a;
   --background: #eae5da;
-  --accent: #f06648;
 }
 
 /* .theme-alternate {
@@ -25,7 +27,7 @@
 } */
 
 body {
-  color: var(--text);
+  color: var(--blue);
   background-color: var(--background);
   margin-left: 3em;
   overflow: hidden;
@@ -37,16 +39,16 @@ body {
 }
 
 a:link {
-  color: var(--text);
+  color: var(--blue);
 }
 a:visited {
-  color: var(--text);
+  color: var(--blue);
 }
 a:hover {
-  color: var(--accent);
+  color: var(--red);
 }
 a:active {
-  color: var(--accent);
+  color: var(--red);
 }
 
 code {

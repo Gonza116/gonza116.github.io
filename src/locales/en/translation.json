@@ -3,7 +3,6 @@
   "workEvents": "Just work",
   "workAndStudiesEvents": "Work and studies",
   "studiesEvents": "Just studies",
-
   "footer-thanks-1": "Made with patience, love and a hand from ",
   "footer-thanks-2": " for the design and that stuff.",
   "technologies": "Technologies",
@@ -20,5 +19,6 @@
   "title-p2-3": "here",
   "title-p3-1": "Let's talk over",
   "title-p3-2": "mail",
-  "title-p3-3": "or via"
+  "title-p3-3": "or via",
+  "currentOccupation": "Current occupation"
 }
