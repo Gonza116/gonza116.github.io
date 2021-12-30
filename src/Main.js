@@ -18,9 +18,10 @@ const Main = () => {
         <Swirl />
       </header>
 
-      <section className="timeline-section">
+      <main className="timeline-section">
+        <h2 style={{ display: "none" }}>My Life Timeline</h2>
         <Timeline EventList={EventList} />
-      </section>
+      </main>
     </>
   );
 };

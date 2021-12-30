@@ -14,41 +14,35 @@ const Swirl = () => {
   ];
   const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
-  if (easterEgg) {
-    return (
-      <section className="swirl-container">
-        <div
-          onClick={() => {
-            setEasterEgg(!easterEgg);
-          }}
-        >
-          <p className="swirl-text">
-            {t("footer-thanks-1")}
-            <a href="https://alvaro.gs" target="_blank" rel="noreferrer">
-              Álvaro
-            </a>{" "}
-            {t("footer-thanks-2")}
-          </p>
-          <p className="swirl-text">
-            <i>{quote}</i>
-          </p>
-        </div>
-      </section>
-    );
-  } else {
-    return (
-      <figure className="swirl-container">
-        <img
-          src={SwirlImage}
-          alt="Swirl"
-          style={{ width: "15em" }}
-          onClick={() => {
-            setEasterEgg(!easterEgg);
-          }}
-        />
-      </figure>
-    );
-  }
+  return (
+    <section className="swirl-container">
+      <img
+        src={SwirlImage}
+        alt="Swirl"
+        style={{ width: "15em" }}
+        onClick={() => {
+          setEasterEgg(!easterEgg);
+        }}
+      />
+      <div
+        className="swirl-easter-egg"
+        onClick={() => {
+          setEasterEgg(!easterEgg);
+        }}
+      >
+        <p className="swirl-text">
+          {t("footer-thanks-1")}
+          <a href="https://alvaro.gs" target="_blank" rel="noreferrer">
+            Álvaro
+          </a>{" "}
+          {t("footer-thanks-2")}
+        </p>
+        <p className="swirl-text">
+          <span className="swirl-quote">{quote}</span>
+        </p>
+      </div>
+    </section>
+  );
 };
 
 export default Swirl;

@@ -1,41 +1,71 @@
 .timeline-item {
   background-color: var(--blue-background);
-  margin: 2em;
   border-radius: 10px;
   align-items: stretch;
   padding: 1em;
+  justify-self: center;
+  border: 1px solid var(--blue);
 }
 
 .timeline-item-current {
   background-color: var(--red-background);
   color: var(--red);
-  margin: 2em;
-  border-radius: 10px;
-  align-items: stretch;
-  padding: 20px;
+  border-color: var(--red);
 }
 
-.timeline-item-title {
+.timeline-item-header {
   display: flex;
+  flex: wrap;
   align-items: baseline;
+  gap: 1em;
 }
 
-.timeline-current-badge {
+.timeline-item-current-badge {
+  display: inline-block;
   background-color: var(--red);
   color: var(--background);
   border-radius: 20px;
-  padding-left: 0.5em;
-  padding-right: 1em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin-left: 1.5em;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  font-size: small;
 }
 
-.timeline-body {
+.timeline-item-body {
   margin-top: 3.5em;
 }
 
-.timeline-technologies {
+.timeline-item-technologies {
   font-size: small;
   font-style: italic;
+}
+
+.timeline-item-body > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+}
+
+.timeline-item-body > ul > li {
+  display: inline-flex;
+  font-size: small;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  padding: 0.2em 0.5em;
+  font-style: italic;
+}
+
+.timeline-item-body-current > ul > li {
+  border-color: var(--red);
+}
+
+.timeline-more-button {
+  background-color: var(--blue-background);
+  align-self: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 20px;
+  font-size: small;
+  border: 1px solid var(--blue);
 }

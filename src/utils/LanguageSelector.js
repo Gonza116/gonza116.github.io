@@ -14,7 +14,6 @@ const LanguageSelector = ({ setEventList }) => {
       setEventList(EventListEN);
     }
   };
-  console.log(i18n.language === "es");
   return (
     <div className="container--toggle">
       {i18n.language === "es" ? (

@@ -1,7 +1,11 @@
 .about-me-container {
   margin-left: 0em;
   font-size: x-large;
-  width: 65%;
+  width: 70%;
+}
+
+.about-me-name {
+  font-weight: bold;
 }
 
 .gregg-logo {

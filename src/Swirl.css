@@ -1,10 +1,17 @@
 .swirl-container {
   text-align: left;
-  margin: 0;
-  height: 2vh;
+}
+
+.swirl-easter-egg {
+  position: absolute;
+  bottom: -1000%;
 }
 
 .swirl-text {
   font-size: x-small;
   color: var(--red);
+}
+
+.swirl-quote {
+  font-style: italic;
 }

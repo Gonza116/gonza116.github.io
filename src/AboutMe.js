@@ -9,13 +9,11 @@ const AboutMe = () => {
       <figure className="gregg-logo">
         <img src={Gregg} alt="Gregg Logo" style={{ height: "3em" }} />
       </figure>
-      <summary>
+      <div>
         <p>
-          {t("title-p1-1")} <b>Gonzalo García Granés</b> {t("title-p1-prons")}{" "}
-          <br />
-          {t("title-p1-2")}
-          <br />
-          {t("title-p1-3")}
+          {t("title-p1-1")}{" "}
+          <span className="about-me-name">Gonzalo García Granés</span>{" "}
+          {t("title-p1-prons")} {t("title-p1-2")} {t("title-p1-3")}
         </p>
         <p>
           {t("title-p2-1")}{" "}
@@ -55,7 +53,7 @@ const AboutMe = () => {
           </a>
           .
         </p>
-      </summary>
+      </div>
     </section>
   );
 };

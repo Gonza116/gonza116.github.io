@@ -4,19 +4,22 @@ import { useTranslation } from "react-i18next";
 
 const getFilteredEvents = (EventList, filter) => {
   switch (filter) {
-    case "CURRENT":
+    case "STAGE_1":
       return EventList.filter((listedEvent) => listedEvent.type === "CURRENT");
-    case "ALL":
-      return EventList;
-    case "STUDIES":
-      return EventList.filter((listedEvent) => listedEvent.type === "STUDIES");
-    case "WORK":
-      return EventList.filter((listedEvent) => listedEvent.type === "WORK");
-    case "STUDIES+WORK":
+    case "STAGE_2":
       return EventList.filter(
         (listedEvent) =>
-          listedEvent.type === "STUDIES" || listedEvent.type === "WORK"
+          listedEvent.type === "CURRENT" || listedEvent.type === "WORK"
       );
+    case "STAGE_3":
+      return EventList.filter(
+        (listedEvent) =>
+          listedEvent.type === "CURRENT" ||
+          listedEvent.type === "WORK" ||
+          listedEvent.type === "STUDIES"
+      );
+    case "STAGE_4":
+      return EventList;
     default:
       break;
   }
@@ -25,11 +28,53 @@ const getFilteredEvents = (EventList, filter) => {
 
 const Timeline = ({ EventList }) => {
   const [events, setEvents] = useState(getFilteredEvents(EventList, "ALL"));
-  const [filter, setFilter] = useState("CURRENT");
+  const [stage, setStage] = useState("STAGE_1");
+  const { t } = useTranslation();
 
   useEffect(() => {
-    setEvents(getFilteredEvents(EventList, filter));
-  }, [filter, EventList]);
+    setEvents(getFilteredEvents(EventList, stage));
+  }, [stage, EventList]);
+
+  const getMoreButton = () => {
+    switch (stage) {
+      case "STAGE_1":
+        return (
+          <div
+            className="timeline-more-button"
+            onClick={() => {
+              setStage("STAGE_2");
+            }}
+          >
+            <p>{t("stage-1-more")}</p>
+          </div>
+        );
+      case "STAGE_2":
+        return (
+          <div
+            className="timeline-more-button"
+            onClick={() => {
+              setStage("STAGE_3");
+            }}
+          >
+            <p>{t("stage-2-more")}</p>
+          </div>
+        );
+      case "STAGE_3":
+        return (
+          <div
+            className="timeline-more-button"
+            onClick={() => {
+              setStage("STAGE_4");
+            }}
+          >
+            <p>{t("stage-3-more")}</p>
+          </div>
+        );
+
+      default:
+        break;
+    }
+  };
 
   return (
     <>
@@ -42,44 +87,57 @@ const Timeline = ({ EventList }) => {
           />
         );
       })}
+      {getMoreButton()}
     </>
   );
 };
 
 export default Timeline;
 
-const Event = ({
-  explanation,
-  date,
-  title,
-  extra,
-  technologies,
-  isFinal,
-  type,
-}) => {
+const Event = ({ explanation, date, title, technologies, type, key }) => {
   const { t } = useTranslation();
-  if (!isFinal && (!explanation || explanation === "")) {
-    explanation = (
-      <div>
-        <br />
-        <br />
-      </div>
-    );
-  }
+
+  const getTechnologyBadges = () => {
+    console.log(technologies);
+    if (technologies) {
+      return (
+        <ul>
+          {technologies.split(", ").map((it) => (
+            <li>{it}</li>
+          ))}
+        </ul>
+      );
+    } else {
+      return null;
+    }
+  };
   return (
-    <article className="timeline-item-current">
-      <div className="timeline-item-title">
-        <p className="timeline-text">{date}</p>
-        <p className="timeline-current-badge">{t("currentOccupation")}</p>
-      </div>
-      <div className="timeline-body">
-        <p className="timeline-text">
-          <b>{title}</b>
-        </p>
-        <p className="timeline-text">{explanation}</p>
-        {technologies && (
-          <p className="timeline-technologies">{technologies}</p>
+    <article
+      className={
+        type === "CURRENT"
+          ? "timeline-item timeline-item-current"
+          : "timeline-item"
+      }
+    >
+      <div className="timeline-item-header">
+        <time>{date}</time>
+        {type === "CURRENT" && (
+          <div className="timeline-item-current-badge">
+            {t("currentOccupation")}
+          </div>
         )}
+      </div>
+      <div
+        className={
+          type === "CURRENT"
+            ? "timeline-item-body timeline-item-body-current"
+            : "timeline-item-body"
+        }
+      >
+        <h3>{title}</h3>
+        <p>{explanation}</p>
+        <h4 style={{ display: "none" }}>Technologies</h4>
+        {getTechnologyBadges()}
       </div>
     </article>
   );
