@@ -1,68 +1,49 @@
 import { useEffect, useState } from "react";
 import { setTheme } from "../utils/themes";
 import "./Toggle.css";
-import { useMediaQuery } from "react-responsive";
 
 const Toggle = () => {
-  const [togClass, setTogClass] = useState("default");
-  const userPrefersDark = useMediaQuery({
-    query: "(prefers-color-scheme: dark)",
-  });
-  let theme = localStorage.getItem("theme");
+	const [togClass, setTogClass] = useState("default");
+	const userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+	let theme = localStorage.getItem("theme");
 
-  const handleOnClick = () => {
-    if (localStorage.getItem("theme") === "theme-default") {
-      setTheme("theme-alternate");
-      setTogClass("alternate");
-    } else {
-      setTheme("theme-default");
-      setTogClass("default");
-    }
-  };
+	console.log("Toggle class => ", togClass);
+	console.log("userPrefersDarl => ", userPrefersDark);
 
-  useEffect(() => {
-    if (localStorage.getItem("theme") === "theme-default") {
-      setTogClass("default");
-    } else if (localStorage.getItem("theme") === "theme-alternate") {
-      setTogClass("alternate");
-    }
-  }, [theme]);
+	const handleOnClick = () => {
+		if (localStorage.getItem("theme") === "theme-default") {
+			setTheme("theme-alternate");
+			setTogClass("alternate");
+		} else {
+			setTheme("theme-default");
+			setTogClass("default");
+		}
+	};
 
-  if (userPrefersDark) {
-    return (
-      <div className="container--toggle">
-        {togClass === "alternate" ? (
-          <button className="toggle" onClick={handleOnClick}>
-            🔆➡️🌙
-          </button>
-        ) : (
-          <button className="toggle" onClick={handleOnClick}>
-            🌙➡️🔆
-          </button>
-        )}
-        <label htmlFor="toggle" className="toggle--label">
-          <span className="toggle--label-background"></span>
-        </label>
-      </div>
-    );
-  } else {
-    return (
-      <div className="container--toggle">
-        {togClass === "alternate" ? (
-          <button className="toggle" onClick={handleOnClick}>
-            🌙➡️🔆
-          </button>
-        ) : (
-          <button className="toggle" onClick={handleOnClick}>
-            🔆➡️🌙
-          </button>
-        )}
-        <label htmlFor="toggle" className="toggle--label">
-          <span className="toggle--label-background"></span>
-        </label>
-      </div>
-    );
-  }
+	useEffect(() => {
+		if (localStorage.getItem("theme") === "theme-default") {
+			setTogClass("default");
+		} else if (localStorage.getItem("theme") === "theme-alternate") {
+			setTogClass("alternate");
+		}
+	}, [theme]);
+
+	return (
+		<div className="container--toggle">
+			{togClass === "alternate" ? (
+				<button className="toggle dark-mode" onClick={handleOnClick}>
+					<u>light</u> / dark
+				</button>
+			) : (
+				<button className="toggle dark-mode" onClick={handleOnClick}>
+					light / <u>dark</u>
+				</button>
+			)}
+			<label htmlFor="toggle" className="toggle--label">
+				<span className="toggle--label-background"></span>
+			</label>
+		</div>
+	);
 };
 
 export default Toggle;
