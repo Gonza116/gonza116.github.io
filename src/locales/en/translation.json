@@ -6,10 +6,6 @@
 	"footer-thanks-1": "Made with patience, love and a hand from ",
 	"footer-thanks-2": " for the design and that stuff.",
 	"technologies": "Technologies",
-	"spanish": "Spanish",
-	"english": "English",
-	"spanish-reverse": "Español",
-	"english-reverse": "Inglés",
 	"title-p1-1": "Hi! I'm",
 	"title-p1-prons": "(he/him),",
 	"title-p1-2": "a Full Stack (although leaned towards Frontend) developer based in Madrid, Spain.",
@@ -23,5 +19,7 @@
 	"currentOccupation": "Current occupation",
 	"stage-1-more": "What else have you done?",
 	"stage-2-more": "Is there more?",
-	"stage-3-more": "Show me everything you've ever done"
+	"stage-3-more": "Show me everything you've ever done",
+	"light": "light",
+	"dark": "dark"
 }

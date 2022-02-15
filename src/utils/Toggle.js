@@ -1,42 +1,59 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { setTheme } from "../utils/themes";
 import "./Toggle.css";
+import { useTranslation } from "react-i18next";
 
 const Toggle = () => {
-	const [togClass, setTogClass] = useState("default");
 	const userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-	let theme = localStorage.getItem("theme");
-
-	console.log("Toggle class => ", togClass);
-	console.log("userPrefersDarl => ", userPrefersDark);
+	const [togClass, setTogClass] = useState(
+		userPrefersDark ? "alternate" : "default"
+	);
+	const { t } = useTranslation();
+	// let theme = localStorage.getItem("theme");
 
 	const handleOnClick = () => {
-		if (localStorage.getItem("theme") === "theme-default") {
-			setTheme("theme-alternate");
+		if (togClass === "default") {
 			setTogClass("alternate");
+			setTheme("theme-alternate");
 		} else {
-			setTheme("theme-default");
 			setTogClass("default");
+			setTheme("theme-default");
 		}
 	};
 
-	useEffect(() => {
-		if (localStorage.getItem("theme") === "theme-default") {
-			setTogClass("default");
-		} else if (localStorage.getItem("theme") === "theme-alternate") {
-			setTogClass("alternate");
-		}
-	}, [theme]);
+	// useEffect(() => {
+	// 	if (userPrefersDark) {
+	// 		setTogClass("alternate");
+	// 	} else {
+	// 		setTogClass("default");
+	// 	}
+	// }, [userPrefersDark]);
 
 	return (
 		<div className="container--toggle">
 			{togClass === "alternate" ? (
 				<button className="toggle dark-mode" onClick={handleOnClick}>
-					<u>light</u> / dark
+					{userPrefersDark ? (
+						<>
+							{t("dark")} / <u>{t("light")}</u>
+						</>
+					) : (
+						<>
+							{t("light")} / <u>{t("dark")}</u>
+						</>
+					)}
 				</button>
 			) : (
 				<button className="toggle dark-mode" onClick={handleOnClick}>
-					light / <u>dark</u>
+					{userPrefersDark ? (
+						<>
+							<u>{t("dark")}</u> / {t("light")}
+						</>
+					) : (
+						<>
+							<u>{t("light")}</u> / {t("dark")}
+						</>
+					)}
 				</button>
 			)}
 			<label htmlFor="toggle" className="toggle--label">

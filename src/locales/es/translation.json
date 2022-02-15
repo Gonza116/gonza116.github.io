@@ -6,10 +6,6 @@
 	"footer-thanks-1": "Hecho con paciencia, cariño, y una manita de ",
 	"footer-thanks-2": " para el diseño y esas cosas.",
 	"technologies": "Tecnologías",
-	"spanish": "Español",
-	"english": "Inglés",
-	"spanish-reverse": "Spanish",
-	"english-reverse": "English",
 	"title-p1-1": "¡Hola! Soy",
 	"title-p1-prons": "(él),",
 	"title-p1-2": "desarrollador Full Stack (aunque poco a poco enfocado en frontend) que vive en Madrid (España).",
@@ -23,5 +19,7 @@
 	"currentOccupation": "Trabajo actual",
 	"stage-1-more": "¿Qué más has hecho?",
 	"stage-2-more": "¿Hay más?",
-	"stage-3-more": "Enseñame todo lo que has hecho"
+	"stage-3-more": "Enseñame todo lo que has hecho",
+	"light": "claro",
+	"dark": "oscuro"
 }
