@@ -4,20 +4,20 @@ import translationEN from "./locales/en/translation.json";
 import translationES from "./locales/es/translation.json";
 
 const resources = {
-  en: {
-    translation: translationEN,
-  },
-  es: {
-    translation: translationES,
-  },
+	en: {
+		translation: translationEN,
+	},
+	es: {
+		translation: translationES,
+	},
 };
 
 i18n.use(initReactI18next).init({
-  resources,
-  lng: "en",
-  interpolation: {
-    escapeValue: false,
-  },
+	resources,
+	lng: navigator.language === "es-ES" ? "es" : "en",
+	interpolation: {
+		escapeValue: false,
+	},
 });
 
 export default i18n;

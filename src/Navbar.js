@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import LanguageSelector from "./utils/LanguageSelector";
-import Toggle from "./utils/Toggle";
+import DarkThemeToggle from "./utils/DarkThemeToggle";
 
 const Navbar = ({ setEventList }) => {
 	return (
@@ -9,7 +9,7 @@ const Navbar = ({ setEventList }) => {
 				<LanguageSelector setEventList={setEventList} />
 			</div>
 			<div className="navbar-item">
-				<Toggle />
+				<DarkThemeToggle />
 			</div>
 		</nav>
 	);

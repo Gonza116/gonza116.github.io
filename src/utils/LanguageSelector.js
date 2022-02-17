@@ -1,41 +1,38 @@
 import i18n from "../i18n";
 import { EventListES, EventListEN } from "../constants/eventList";
-import "./LanguageSelector.css";
+import { useState } from "react";
+import "./Toggle.css";
 
 const LanguageSelector = ({ setEventList }) => {
-	const changeLanguage = (lng) => {
-		i18n.changeLanguage(lng);
-		if (lng === "es") {
+	const [userWantsSpanish, setUserWantsSpanish] = useState(
+		navigator.language === "es-ES"
+	);
+
+	const changeLanguage = () => {
+		setUserWantsSpanish(!userWantsSpanish);
+
+		if (!userWantsSpanish) {
+			i18n.changeLanguage("es");
 			setEventList(EventListES);
 		} else {
+			i18n.changeLanguage("en");
 			setEventList(EventListEN);
 		}
 	};
 	return (
-		<div className="container--toggle">
-			{i18n.language === "es" ? (
-				<button
-					className="toggle"
-					onClick={() => {
-						changeLanguage("en");
-					}}
-				>
-					<u>es</u> / en
-				</button>
-			) : (
-				<button
-					className="toggle"
-					onClick={() => {
-						changeLanguage("es");
-					}}
-				>
-					es / <u>en</u>
-				</button>
-			)}
-			<label htmlFor="toggle" className="toggle--label">
-				<span className="toggle--label-background"></span>
-			</label>
-		</div>
+		<>
+			<button className="toggle" onClick={changeLanguage}>
+				{userWantsSpanish ? (
+					<>
+						en / <u>es</u>
+					</>
+				) : (
+					<>
+						<u>en</u> / es
+					</>
+				)}
+			</button>
+		</>
 	);
 };
 

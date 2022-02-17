@@ -1,36 +1,28 @@
 #root {
-  width: 100vw;
-
-  /* height: 100vh;
-  display: flex; */
+	width: 100%;
 }
 
 #root > * {
-  width: 50%;
-  box-sizing: border-box;
+	width: 50%;
+	box-sizing: border-box;
 }
 
-/* @media (max-width: 700px) {
-  #root > * {
-    width: 100%;
-  }
-} */
 header {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  position: fixed;
-  padding: 3em;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	position: fixed;
+	padding: 3em;
 }
 
 .timeline-section {
-  float: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 3em 5em;
-  gap: 2em;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 3em 5em;
+	gap: 2em;
 }
