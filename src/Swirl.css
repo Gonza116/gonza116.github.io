@@ -1,0 +1,9 @@
+.swirl-container {
+	text-align: center;
+}
+
+@media only screen and (min-width: 801px) {
+	.swirl-container {
+		text-align: left;
+	}
+}

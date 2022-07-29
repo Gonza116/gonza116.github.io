@@ -1,67 +1,11 @@
-.timeline-data {
-  margin-left: 1em;
-  border-left: 3px dashed #b4b4b4;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-right: 1em;
-  text-align: justify;
-}
-
-.timeline-container {
-  margin-left: 2em;
-  align-items: stretch;
-}
-
-.timeline-top-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.timeline-date {
-  font-family: "Courier New", Courier, monospace;
-  display: inline-block;
-  width: auto;
-}
-
-.timeline-subcontainer {
-  display: inline-block;
-  width: 69%;
-}
-
-.timeline-extra {
-  font-family: "Courier New", Courier, monospace;
-  display: inline;
-}
-
-.timeline-buttons-container {
-  padding: 1em;
-  text-align: center;
-  display: flex;
-  width: 60%;
-  margin: auto;
-}
-
-.cv-shove {
-  font-size: small;
-  text-align: center;
-  font-style: italic;
-}
-
-.timeline-filter-button {
-  background-color: var(--background);
-  color: var(--text);
-  width: 25%;
-  border: none;
-  border-bottom: 2px;
-  border-bottom-style: solid;
-}
-
-.timeline-filter-button-selected {
-  background-color: var(--background);
-  color: var(--accent);
-  width: 25%;
-  border: none;
-  border-bottom: 2px;
-  border-bottom-style: solid;
-  font-weight: bold;
+.timeline-more-button {
+	background-color: var(--blue-background);
+	align-self: center;
+	padding: 0.5em 1em;
+	border-radius: 20px;
+	color: var(--blue);
+	font-size: 0.85em;
+	font-family: inherit;
+	border: 1px solid var(--blue);
+	cursor: pointer;
 }

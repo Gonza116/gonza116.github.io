@@ -1,54 +1,44 @@
-.theme-default {
-  --text: #dadada;
-  --background: #1f2023;
-  --accent: #ecb14d;
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap%27");
+
+:root {
+	--blue: #1480ff;
+	--blue-background: #1480ff1a;
+	--red: #f06648;
+	--red-background: #f066481a;
+	--background: #eae5da;
 }
 
-.theme-alternate {
-  --text: #1f2023;
-  --background: #dadada;
-  --accent: #4687dc;
-}
-
-@media (prefers-color-scheme: light) {
-  .theme-default {
-    --text: #1f2023;
-    --background: #dadada;
-    --accent: #4687dc;
-  }
-
-  .theme-alternate {
-    --text: #dadada;
-    --background: #1f2023;
-    --accent: #ecb14d;
-  }
+[data-theme="dark"] {
+	--blue: #3ea2ff;
+	--blue-background: #3ea2ff1a;
+	--red: #a8412a;
+	--red-background: #a8412a1a;
+	--background: #241e18;
 }
 
 body {
-  color: var(--text);
-  background-color: var(--background);
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	color: var(--blue);
+	background-color: var(--background);
+	margin: 0;
+	font-family: "Public Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background-color ease 0.2s;
+}
+
+a {
+	transition: color ease 0.2s;
 }
 
 a:link {
-  color: var(--accent);
+	color: var(--blue);
 }
 a:visited {
-  color: var(--accent);
+	color: var(--blue);
 }
 a:hover {
-  color: var(--accent);
+	color: var(--red);
 }
 a:active {
-  color: var(--accent);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	color: var(--red);
 }

@@ -1,0 +1,69 @@
+.about-me-container {
+	margin: 0;
+	margin-bottom: 2em;
+}
+
+.about-me-container a {
+	text-underline-offset: 2px;
+}
+
+.about-me-name {
+	font-weight: 700;
+}
+
+.gregg-logo {
+	margin-left: 0;
+}
+
+.talking-fox {
+	margin-top: 2em;
+	margin: 0em;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.bubble {
+	position: relative;
+	background-color: var(--red-background);
+	color: var(--red);
+	border: 1px solid #f06648;
+	padding: 1em;
+	border-radius: 10px;
+	align-items: stretch;
+	font-size: 1rem;
+	transition: height 1s;
+}
+.bubble:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 0;
+	z-index: 1;
+	border-style: solid;
+	border-color: transparent #f06648;
+	border-width: 8px 0 8px 8px;
+	top: 50%;
+	right: -8px;
+	margin-top: -8px;
+}
+
+@media only screen and (min-width: 801px) {
+	.about-me-container {
+		margin-left: 0;
+		font-size: 1.5rem;
+		max-width: 450px;
+	}
+
+	.about-me-container a {
+		text-underline-offset: 2px;
+	}
+
+	.about-me-name {
+		font-weight: 700;
+	}
+
+	.gregg-logo {
+		margin: 0;
+	}
+}

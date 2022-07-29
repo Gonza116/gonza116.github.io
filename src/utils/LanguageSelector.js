@@ -1,27 +1,39 @@
 import i18n from "../i18n";
 import { EventListES, EventListEN } from "../constants/eventList";
-import "./LanguageSelector.css";
+import { useState } from "react";
+import "./Toggle.css";
 
 const LanguageSelector = ({ setEventList }) => {
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    if (lng === "es") {
-      setEventList(EventListES);
-    } else {
-      setEventList(EventListEN);
-    }
-  };
-  return (
-    <select
-      className="language-select"
-      onChange={(e) => {
-        changeLanguage(e.target.value);
-      }}
-    >
-      <option value="en">🇬🇧</option>
-      <option value="es">🇪🇸</option>
-    </select>
-  );
+	const [userWantsSpanish, setUserWantsSpanish] = useState(
+		navigator.language === "es-ES"
+	);
+
+	const changeLanguage = () => {
+		setUserWantsSpanish(!userWantsSpanish);
+
+		if (!userWantsSpanish) {
+			i18n.changeLanguage("es");
+			setEventList(EventListES);
+		} else {
+			i18n.changeLanguage("en");
+			setEventList(EventListEN);
+		}
+	};
+	return (
+		<>
+			<button className="toggle" onClick={changeLanguage}>
+				{userWantsSpanish ? (
+					<>
+						en / <u>es</u>
+					</>
+				) : (
+					<>
+						<u>en</u> / es
+					</>
+				)}
+			</button>
+		</>
+	);
 };
 
 export default LanguageSelector;
