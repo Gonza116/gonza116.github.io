@@ -13,10 +13,14 @@ const LanguageSelector = ({ setEventList }) => {
 
 		if (!userWantsSpanish) {
 			i18n.changeLanguage("es");
-			setEventList(EventListES);
+			if (setEventList) {
+				setEventList(EventListES);
+			}
 		} else {
 			i18n.changeLanguage("en");
-			setEventList(EventListEN);
+			if (setEventList) {
+				setEventList(EventListEN);
+			}
 		}
 	};
 	return (

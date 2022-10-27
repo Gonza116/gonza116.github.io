@@ -15,7 +15,7 @@ const Main = () => {
 		<>
 			<header>
 				<h1 style={{ display: "none" }}>Gonzalo García Granés</h1>
-				<Navbar setEventList={setEventList} />
+				<Navbar home setEventList={setEventList} />
 				<AboutMe />
 				<Swirl />
 			</header>

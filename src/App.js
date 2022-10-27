@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LinkTest from "./LinkTest";
 import Main from "./Main";
+import MusicTops from "./tops/MusicTops";
 
 const App = () => {
 	return (
@@ -8,6 +9,9 @@ const App = () => {
 			<Switch>
 				<Route path="/link-test">
 					<LinkTest />
+				</Route>
+				<Route path="/tops/music">
+					<MusicTops />
 				</Route>
 				<Route path="/">
 					<Main />
