@@ -1,23 +1,13 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import LinkTest from "./LinkTest";
+import { HashRouter, Route } from "react-router-dom";
 import Main from "./Main";
 import MusicTops from "./tops/MusicTops";
 
 const App = () => {
 	return (
-		<Router>
-			<Switch>
-				<Route path="/link-test">
-					<LinkTest />
-				</Route>
-				<Route path="/tops/music">
-					<MusicTops />
-				</Route>
-				<Route path="/">
-					<Main />
-				</Route>
-			</Switch>
-		</Router>
+		<HashRouter>
+			<Route exact path="/" component={Main} />
+			<Route exact path="/tops/music" component={MusicTops} />
+		</HashRouter>
 	);
 };
 

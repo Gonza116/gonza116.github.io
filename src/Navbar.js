@@ -17,7 +17,7 @@ const Navbar = ({ home = false, setEventList }) => {
 					<DarkThemeToggle />
 				</div>
 				<div className="navbar-item">
-					<a className="bold-link" href={"/tops/music"}>
+					<a className="bold-link" href={"/#/tops/music"}>
 						{t("tops-music")}
 					</a>
 				</div>
@@ -27,7 +27,7 @@ const Navbar = ({ home = false, setEventList }) => {
 		return (
 			<nav className="navbar-container not-home">
 				<div className="navbar-item">
-					<a href="/">
+					<a href="/#">
 						<img src={Gregg} alt="Gregg Logo" style={{ height: "3em" }} />
 					</a>
 				</div>
