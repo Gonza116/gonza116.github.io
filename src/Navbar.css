@@ -2,3 +2,18 @@
 	display: flex;
 	gap: 1em;
 }
+
+.not-home {
+	align-items: center;
+	padding-left: 2em;
+	margin-top: 1em;
+}
+
+.bold-link {
+	font-weight: 700;
+	padding: 0;
+	font-size: 1em;
+	transition: color ease 0.2s;
+	font-family: inherit;
+	text-underline-offset: 2px;
+}
