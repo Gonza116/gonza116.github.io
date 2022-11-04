@@ -2,6 +2,20 @@ import links from "./links";
 
 export const EventListES = [
 	{
+		date: "Desde Noviembre, 2022",
+		title: "Trabajando en Intermark IT",
+		extra: "Empleo actual",
+		technologies: "React, React Native",
+		explanation: (
+			<p>
+				Actualmente trabajo como desarrollador frontend en una consultora
+				asturiana prestando servicios de transformación digital a diversas
+				empresas nacionales.
+			</p>
+		),
+		type: "CURRENT",
+	},
+	{
 		date: "Agosto 2021",
 		title: "Termino la carrera de Ingeniería Informática",
 		explanation: (
@@ -50,19 +64,28 @@ export const EventListES = [
 		type: "STUDIES",
 	},
 	{
-		date: "Desde Julio, 2021",
-		title: "Trabajando en NBQ Technologies",
-		extra: "Empleo actual",
+		date: "Julio, 2021 a Noviembre, 2022",
+		title: "Trabajo en NBQ Technologies",
 		technologies: "React, React Native, Firebase",
 		explanation: (
-			<p>
-				Actualmente desarrollo una aplicación fintech (de microcréditos) y otra
-				de compra de ropa, con versiones tanto web como Android/iOS, utilizando
-				React y React Native. Las aplicaciones usan Firebase como base de datos
-				y node como backend, con funciones desplegadas en Google Cloud.
-			</p>
+			<>
+				<p>
+					Estuve inmerso en el desarrollo de una aplicación fintech (de
+					microcréditos) y otra de compra de ropa (WE), con versiones tanto web
+					como Android/iOS, utilizando React y React Native. Las aplicaciones
+					usan Firebase como base de datos y node como backend, con funciones
+					desplegadas en Google Cloud.
+				</p>
+				<p>
+					Además, ya que llegué al equipo conforme empezaba el desarrollo de
+					esta app, y a que se trataba de una startup, pude estar implicado de
+					primera mano en todos los procesos desde la conceptualización hasta la
+					publicación de la app en las diferentes tiendas, pasando por supuesto
+					por el desarrollo y pruebas.
+				</p>
+			</>
 		),
-		type: "CURRENT",
+		type: "WORK",
 	},
 	{
 		date: "Septiembre, 2020 a Julio, 2021",
@@ -135,6 +158,20 @@ export const EventListES = [
 
 export const EventListEN = [
 	{
+		date: "From November 2022",
+		title: "Working at Intermark IT",
+		extra: "Current job",
+		technologies: "React, React Native",
+		explanation: (
+			<p>
+				I'm currently working as a frontend developer in an Asturian IT
+				consulting firm providing digital transformation services to several
+				national companies.
+			</p>
+		),
+		type: "CURRENT",
+	},
+	{
 		date: "August 2021",
 		title: "Finished the Software Engineering degree",
 		explanation: (
@@ -183,19 +220,27 @@ export const EventListEN = [
 		type: "STUDIES",
 	},
 	{
-		date: "From July 2021",
-		title: "Working at ¡QuéBueno!",
-		extra: "Current job",
+		date: "July 2021 to November 2022",
+		title: "Worked at NBQ Technologies",
 		technologies: "React, React Native, Firebase",
 		explanation: (
-			<p>
-				I'm involved in the development of a fintech and a shopping app, both
-				with web and Android/iOS versions using React and React Native. They use
-				Firebase as a database and node as the backend, with functions deployed
-				in Google Cloud.
-			</p>
+			<>
+				<p>
+					I was involved in the development of a fintech and a shopping app
+					(WE), both with web and Android/iOS versions using React and React
+					Native. They use Firebase as a database and node as the backend, with
+					functions deployed in Google Cloud.
+				</p>
+				<p>
+					Since I joined the team as the development of this app started, and
+					because it was a startup, I could be involved first hand in all the
+					processes from conceptualization to the publication of the app in the
+					different stores, including (of course) the development and testing of
+					the app. development and testing.
+				</p>
+			</>
 		),
-		type: "CURRENT",
+		type: "WORK",
 	},
 	{
 		date: "September 2020 to July 2021",
