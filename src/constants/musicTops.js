@@ -1,3 +1,177 @@
+export const twentyTwo = {
+	year: "2022",
+	albums: [
+		{
+			position: 1,
+			artist: "The 1975",
+			name: "Being Funny In A Foreign Language",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ec/35/84/ec35841a-f7d1-71dd-fcb8-38e8f6c62d83/196922101519_Cover.jpg/600x600bb.jpg",
+		},
+		{
+			position: 2,
+			artist: "Rosalía",
+			name: "MOTOMAMI",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5b/da/8d/5bda8d04-7f2f-4417-12a0-e039dd011152/886449800193.jpg/600x600bb.jpg",
+		},
+		{
+			position: 3,
+			artist: "Black Country, New Road",
+			name: "Ants From Up There",
+			cover:
+				"https://is5-ssl.mzstatic.com/image/thumb/Music112/v4/3e/83/4f/3e834feb-a778-0df8-6c1b-83afddc888da/5054429151442.png/600x600bb.jpg",
+		},
+		{
+			position: 4,
+			artist: "Rina Sawayama",
+			name: "Hold The Girl",
+			cover:
+				"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/74/33/5c/74335c27-4a6e-fe68-af7b-871e5cbf104d/196922042713_Cover.jpg/600x600bb.jpg",
+		},
+		{
+			position: 5,
+			artist: "Charli XCX",
+			name: "CRASH",
+			cover:
+				"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/7c/81/6d/7c816d0a-0745-350a-365e-ff4089af7e92/190296409165.jpg/600x600bb.jpg",
+		},
+		{
+			position: 6,
+			artist: "SZA",
+			name: "SOS",
+			cover:
+				"https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/bd/3b/a9/bd3ba9fb-9609-144f-bcfe-ead67b5f6ab3/196589564931.jpg/600x600bb.jpg",
+		},
+		{
+			position: 7,
+			artist: "Ethel Cain",
+			name: "Preacher's Daughter",
+			cover: "https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/a7/ed/58/a7ed5868-e006-c8cb-5283-e138ea399701/5056167172390_1.jpg/600x600bb.jpg",
+		},
+		{
+			position: 8,
+			artist: "Weyes Blood",
+			name: "And In The Darkness, Hearts Aglow",
+			cover: "https://is5-ssl.mzstatic.com/image/thumb/Music112/v4/63/a6/b9/63a6b9df-ec97-abc7-f96f-f200e2a85c69/098787148565.png/600x600bb.jpg",
+		},
+		{
+			position: 9,
+			artist: "Mitski",
+			name: "Laurel Hell",
+			cover:
+				"https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/fe/01/99/fe019995-88e4-9e5c-9621-d28953dc9aa5/27273.jpg/600x600bb.jpg",
+		},
+		{
+			position: 10,
+			artist: "Taylor Swift",
+			name: "Midnights",
+			cover:
+				"https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/8b/59/4b/8b594b75-5a1a-9a39-e003-b227d09d5b37/22UM1IM07364.rgb.jpg/600x600bb.jpg",
+		},
+		{
+			position: 11,
+			artist: "Biznaga",
+			name: "Bremen No Existe",
+			cover:
+				"https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1b/37/74/1b37747d-11ac-9fb4-3f1c-7ef5a707ad97/8426946908750_3000.jpg/600x600bb.jpg",
+		},
+		{
+			position: 12,
+			artist: "Arcade Fire",
+			name: "WE",
+			cover:
+				"https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/29/7f/0f/297f0f87-fda5-db4b-4103-5bca480f5043/886449956630.jpg/600x600bb.jpg",
+		},
+		{
+			position: 13,
+			artist: "Beyoncé",
+			name: "RENAISSANCE",
+			cover:
+				"https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/05/05/f3/0505f338-9873-feb4-af7f-27a470405e5f/196589246974.jpg/600x600bb.jpg",
+		},
+		{
+			position: 14,
+			artist: "First Aid Kit",
+			name: "Palomino",
+			cover:
+				"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/32/e4/31/32e4314b-8a78-2486-b0b7-d40aa5997eca/196589329295.jpg/600x600bb.jpg",
+		},
+		{
+			position: 15,
+			artist: "Fred Again..",
+			name: "Actual Life 3 (January 1 - September 9 2022)",
+			cover:
+				"https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/b0/9c/b7/b09cb72c-cca9-5d66-bc9d-a9b5e5f86b22/5054197236389.jpg/600x600bb.jpg",
+		},
+		{
+			position: 16,
+			artist: "BROCKHAMPTON",
+			name: "TM",
+			cover:
+				"https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/94/a0/10/94a01075-8125-c028-cd36-863cf97c873a/196589446497.jpg/600x600bb.jpg",
+		},
+		{
+			position: 17,
+			artist: "Kendrick Lamar",
+			name: "Mr. Morale & The Big Steppers",
+			cover:
+				"https://is5-ssl.mzstatic.com/image/thumb/Music116/v4/72/a1/a9/72a1a9a0-6c42-a37f-aad4-7e8772365c6d/22UMGIM52376.rgb.jpg/600x600bb.jpg",
+		},
+		{
+			position: 18,
+			artist: "Arctic Monkeys",
+			name: "The Car",
+			cover:
+				"https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/0f/03/0f/0f030fb9-a529-dba5-4e9d-4fbf2ed25037/887828045563.png/600x600bb.jpg",
+		},
+		{
+			position: 19,
+			artist: "Marcus Mumford",
+			name: "(self-titled)",
+			cover: "https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/c9/ef/d7/c9efd7c5-6256-09f3-d41e-e8a4d08fb783/22UMGIM64225.rgb.jpg/600x600bb.jpg",
+		},
+		{
+			position: 20,
+			artist: "MUNA",
+			name: "MUNA",
+			cover:
+				"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/65/5f/7f/655f7f7b-25d8-40de-465c-8c8348919e1d/31341.jpg/600x600bb.jpg",
+		},
+		{
+			position: 21,
+			artist: "Carly Rae Jepsen",
+			name: "The Loneliest Time",
+			cover:
+				"https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/87/44/c7/8744c742-9701-eff8-53a5-269f1f055376/22UMGIM84738.rgb.jpg/600x600bb.jpg",
+		},
+		{
+			position: 22,
+			artist: "Easy Life",
+			name: "MAYBE IN ANOTHER LIFE...",
+			cover:
+				"https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/93/21/9b/93219b45-7dd0-b9b3-d9c1-da81a1fce111/22UMGIM40455.rgb.jpg/600x600bb.jpg",
+		},
+		{
+			position: 23,
+			artist: "Father John Misty",
+			name: "Chloë and the Next 20th Century",
+			cover: "https://media.pitchfork.com/photos/61d501b617cbc35771b40d76/1:1/w_600/fjm-chloe-4000x4000.jpeg",
+		},
+		{
+			position: 24,
+			artist: "Shygirl",
+			name: "Nymph",
+			cover:
+				"https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/dd/50/2a/dd502a01-fe53-3529-3a3e-d080c0a46546/5056556107729_cover.jpg/600x600bb.jpg",
+		},
+		{
+			position: 25,
+			artist: "Florence + The Machine",
+			name: "Dance Fever",
+			cover: "https://is5-ssl.mzstatic.com/image/thumb/Music116/v4/93/ce/c5/93cec50d-bb01-3a42-364a-54af31cd73c7/22UMGIM23127.rgb.jpg/600x600bb.jpg",
+		},
+	],
+};
+
 export const twentyOne = {
 	year: "2021",
 	albums: [
