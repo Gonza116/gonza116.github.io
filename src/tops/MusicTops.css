@@ -119,6 +119,12 @@
 	font-style: italic;
 }
 
+.twenty-three {
+	background-color: var(--twenty-three-bg);
+	color: var(--twenty-three-tx);
+	transition: background-color ease 0.2s, color ease 0.2s;
+}
+
 .twenty-two {
 	background-color: var(--twenty-two-bg);
 	color: var(--twenty-two-tx);

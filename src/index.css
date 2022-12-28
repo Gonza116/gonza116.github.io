@@ -10,6 +10,8 @@
 	bg = pantone color of the year
 	tx = enter in coolors and choose combining color putting the bg color in the middle column */
 	--covers-brightness: 100%;
+	--twenty-three-bg: #be3455;
+	--twenty-three-tx: #9896a4;
 	--twenty-two-bg: #6868ab;
 	--twenty-two-tx: #ff934f;
 	--twenty-one-bg: #f5df4d;
