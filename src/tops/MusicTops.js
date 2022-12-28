@@ -1,7 +1,7 @@
 import "./MusicTops.css";
 import YearRow from "./music/YearRow";
 import {
-	twentyTwo
+	twentyTwo,
 	twentyOne,
 	twenty,
 	nineteen,
