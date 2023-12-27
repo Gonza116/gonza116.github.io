@@ -1,6 +1,7 @@
 import "./MusicTops.css";
 import YearRow from "./music/YearRow";
 import {
+	twentyThree,
 	twentyTwo,
 	twentyOne,
 	twenty,
@@ -15,6 +16,7 @@ const MusicTops = () => {
 		<>
 			<Navbar />
 			<div className="tops-containers">
+				<YearRow yearClass="twenty-three" albumList={twentyThree} />
 				<YearRow yearClass="twenty-two" albumList={twentyTwo} />
 				<YearRow yearClass="twenty-one" albumList={twentyOne} />
 				<YearRow yearClass="twenty" albumList={twenty} />

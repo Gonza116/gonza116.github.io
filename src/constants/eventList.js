@@ -2,6 +2,18 @@ import links from "./links";
 
 export const EventListES = [
 	{
+		date: "4 de Diciembre, 2023",
+		title: "Participé en El Cazador",
+		explanation: (
+			<p>
+				Fui a concursar al programa de RTVE. No me llevé nada más
+				que la experiencia, pero oye, ¡por lo menos es una anécdota guay!
+				Si te da curiosidad, puedes verlo <a rel="noreferrer" targe="_blank">aquí</a>.
+			</p>
+		),
+		type: "MISCELLANEOUS",
+	},
+	{
 		date: "Desde Noviembre, 2022",
 		title: "Trabajando en Intermark IT",
 		extra: "Empleo actual",
@@ -157,6 +169,18 @@ export const EventListES = [
 ];
 
 export const EventListEN = [
+	{
+		date: "December 4th, 2023",
+		title: "Starred in El Cazador",
+		explanation: (
+			<p>
+				I went to compete in a Spanish public TV contest. I didn't take anything with me 
+				but the experience, but hey, at least it's a cool anecdote!
+				If you are curious, you can watch it <a rel="noreferrer" targe="_blank">here</a> (in Spanish).
+			</p>
+		),
+		type: "MISCELLANEOUS",
+	},
 	{
 		date: "From November 2022",
 		title: "Working at Intermark IT",

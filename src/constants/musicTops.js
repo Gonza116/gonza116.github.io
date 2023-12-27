@@ -1,3 +1,159 @@
+export const twentyThree = {
+	year: "2023",
+	albums: [
+		{
+			position: 1,
+			artist: "Caroline Polacheck",
+			name: "Desire, I Want To Turn Into You",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/10/51/f2/1051f2cc-195f-ddb6-2d9e-26c74f0387fd/197187988518.jpg/600x600bb.jpg"
+		},
+		{
+			position: 2,
+			artist: "Sufjan Stevens",
+			name: "Javelin",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/80/e9/61/80e96151-6e40-6daf-bdc6-33dbb65510e6/40697.jpg/600x600bb.jpg"
+		},
+		{
+			position: 3,
+			artist: "Boygenius",
+			name: "the record",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ad/fc/81/adfc819e-00b2-3cb5-deb2-931a5b6da3fa/22UM1IM44998.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 4,
+			artist: "Black Country, New Road",
+			name: "Live At Bush Hall",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/36/ff/fb/36fffb75-8489-2baf-8288-473adff6f46f/5054429172508.png/600x600bb.jpg"
+		},
+		{
+			position: 5,
+			artist: "María José Llergo",
+			name: "ULTRABELLEZA",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8e/cb/ce/8ecbce22-8da5-3ebf-42cb-76a029c65692/196871235730.jpg/600x600bb.jpg"
+		},
+		{
+			position: 6,
+			artist: "PinkPantheress",
+			name: "Heaven knows",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/05/59/17/0559179a-9f72-3384-2bc0-ebfee2c5c9e3/5054197835070.jpg/600x600bb.jpg"
+		},
+		{
+			position: 7,
+			artist: "Hannah Diamond",
+			name: "Perfect Picture",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ae/1f/26/ae1f2659-827d-8cf7-cd2a-1586c288c59c/196922550393_Cover.jpg/600x600bb.jpg"
+		},
+		{
+			position: 8,
+			artist: "Janelle Monáe",
+			name: "The Age Of Pleasure",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0f/d6/08/0fd608cf-086d-b6da-ea29-a4591601ebc0/075679690227.jpg/600x600bb.jpg"
+		},
+		{
+			position: 9,
+			artist: "Mitski",
+			name: "The Land Is Inhospitable and So Are We",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8f/4b/40/8f4b4044-d02b-dc25-7d01-7d9d225fdce4/40240.jpg/600x600bb.jpg"
+		},
+		{
+			position: 10,
+			artist: "100 Gecs",
+			name: "10,000 Gecs",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7b/16/c9/7b16c9c2-a738-66c6-0476-65f020d5dc24/075679708069.jpg/600x600bb.jpg"
+		},
+		{
+			position: 11,
+			artist: "Rakky Ripper",
+			name: "NADIE LO VA A HACER POR MI",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/da/6f/5f/da6f5f66-8ea4-6bf5-e075-f523a5ab8ff2/197338239247.jpg/600x600bb.jpg"
+		},
+		{
+			position: 12,
+			artist: "Chappell Roan",
+			name: "The Rise and Fall of a Midwest Princess",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/65/cb/fb65cb0f-4260-d740-d6f5-bb80c9c27c1b/23UMGIM84225.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 13,
+			artist: "Slayyyter",
+			name: "STARFUCKER",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/19/d6/e0/19d6e085-9c51-a3cc-5532-a60eed1b4a90/23SYMIM05623.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 14,
+			artist: "James Blake",
+			name: "Playing Robots Into Heaven",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ac/df/31/acdf31ba-ed8c-36c8-55fa-4fea81cf8395/23UMGIM73095.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 15,
+			artist: "The Chemical Brothers",
+			name: "For That Beautiful Feeling",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/cb/82/94cb8213-d81a-d5f4-39a4-723d7813f2e7/23UMGIM30024.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 16,
+			artist: "Thy Slaughter, A.G. Cook & EASYFUN",
+			name: "Soft Rock",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/50/79/a1/5079a1fc-c285-2bf4-0607-34b12b6209c7/196922705571_Cover.jpg/600x600bb.jpg"
+		},
+		{
+			position: 17,
+			artist: "The Japansese House",
+			name: "In The End It Always Does",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/36/c4/e0/36c4e01c-8e41-9379-fce1-48f784d5f134/196922296680_Cover.jpg/600x600bb.jpg"
+		},
+		{
+			position: 18,
+			artist: "Lana Del Rey",
+			name: "Did you know that there's a tunnel under Ocean Blvd",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7c/c4/e5/7cc4e501-6b09-b379-bb54-a40de4615aa3/22UM1IM33313.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 19,
+			artist: "Olivia Rodrigo",
+			name: "GUTS",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/d8/9c/9bd89c9e-b44d-ad25-1516-b9b30f64fd2a/23UMGIM71510.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 20,
+			artist: "Jorja Smith",
+			name: "falling or flying",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/67/04/be/6704be3f-90ef-267b-c677-29f78c3f36ea/197188272494.jpg/600x600bb.jpg"
+		},
+		{
+			position: 21,
+			artist: "Sigur Rós",
+			name: "ÁTTA",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f0/ec/d2/f0ecd2d3-6dd0-dda8-2a16-0b74c0a5260f/4050538920437.jpg/600x600bb.jpg"
+		},
+		{
+			position: 22,
+			artist: "Lil Yatchy",
+			name: "Let's Start Here",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ea/42/e0/ea42e096-991f-eff5-ae81-b67bd9fdd1c4/22UM1IM13152.rgb.jpg/600x600bb.jpg"
+		},
+		{
+			position: 23,
+			artist: "_juno",
+			name: "_BCN747",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/75/76/b2/7576b293-2c3c-063a-5b61-a956eea7b5e1/8445162792394.jpg/600x600bb.jpg"
+		},
+		{
+			position: 24,
+			artist: "Arlo Parks",
+			name: "My Soft Machine",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/be/dd/e3/bedde35d-a3dc-6d1c-7b4b-e69911aa5fad/5400863101916_cover.jpg/600x600bb.jpg"
+		},
+		{
+			position: 25,
+			artist: "María Escarmiento",
+			name: "☆ COSAS DE BRUJAS ☆",
+			cover: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/99/c5/80/99c58084-6dc1-7ad9-539f-36b6fb44ff31/197338947388.jpg/600x600bb.jpg"
+		},
+	]
+}
+
 export const twentyTwo = {
 	year: "2022",
 	albums: [
@@ -881,7 +1037,7 @@ export const seventeen = {
 			artist: "The xx",
 			name: "I See You",
 			cover:
-				"https://i2.wp.com/estacionindierock.com/wp-content/uploads/2018/11/the-xx-i-see-you.jpg?w=1080&ssl=1",
+				"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bc/c2/4e/bcc24e7c-b389-682c-8f17-5bcb3c4e5f8f/889030016157.png/600x600bb.jpg",
 		},
 		{
 			position: 5,
