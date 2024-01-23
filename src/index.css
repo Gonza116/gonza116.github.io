@@ -24,6 +24,8 @@
 	--eighteen-tx: #f8c630;
 	--seventeen-bg: #88b049;
 	--seventeen-tx: #413c58;
+	/* oscars */
+	--oscars-gold: #c79f27;
 }
 
 [data-theme="dark"] {
@@ -48,6 +50,10 @@
 	--eighteen-tx: #8f6c04;
 	--seventeen-bg: #445824;
 	--seventeen-tx: #201d2c;
+	/* oscars */
+	--oscars-gold: #d7a320;
+	--oscars-white: #FFFFFF;
+	--oscars-black: #101215;
 }
 
 body {
@@ -67,12 +73,16 @@ a {
 a:link {
 	color: var(--blue);
 }
+
 a:visited {
 	color: var(--blue);
 }
+
 a:hover {
 	color: var(--red);
 }
+
 a:active {
 	color: var(--red);
 }
+

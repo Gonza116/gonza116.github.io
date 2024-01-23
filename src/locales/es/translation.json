@@ -15,5 +15,17 @@
 	"stage-3-more": "Enseñame todo lo que has hecho",
 	"light": "claro",
 	"dark": "oscuro",
-	"tops-music": "tops de música"
+	"tops-music": "tops de música",
+	"oscars": "papeleta oscars",
+	"picture": "Mejor Película",
+	"director": "Dirección",
+	"actor": "Actor Protagonista",
+	"actress": "Actriz Protagonista",
+	"supportingActor": "Actor de Reparto",
+	"supportingActress": "Actriz de Reparto",
+	"animatedPicture": "Película Animada",
+	"international": "Película Internacional",
+	"photography": "Fotografía",
+	"editing": "Edición",
+	"for": "por"
 }

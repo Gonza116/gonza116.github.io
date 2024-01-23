@@ -15,5 +15,17 @@
 	"stage-3-more": "Show me everything you've ever done",
 	"light": "light",
 	"dark": "dark",
-	"tops-music": "music tops"
+	"tops-music": "music tops",
+	"oscars": "oscars ballot",
+	"picture": "Best Picture",
+	"director": "Directing",
+	"actor": "Leading Actor",
+	"actress": "Leading Actress",
+	"supportingActor": "Supporting Actor",
+	"supportingActress": "Supporting Actress",
+	"animatedPicture": "Animated Feature Film",
+	"international": "International Feature Film",
+	"photography": "Cinematography",
+	"editing": "Film Editing",
+	"for": "for"
 }
