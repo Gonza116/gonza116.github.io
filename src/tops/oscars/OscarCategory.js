@@ -1,14 +1,8 @@
-import { useState } from "react"
 import { useTranslation } from "react-i18next";
 
 const OscarCategory = ({ category, selectedNominees, setSelectedNominees }) => {
 
-	const { t } = useTranslation();
-
-
-    const [hoveringImage, setHoveringImage] = useState()
-    const categoryNominee = selectedNominees[category.name]
-
+    const { t } = useTranslation();
 
     const handleSelect = (name, nominee) => {
         console.log(name, selectedNominees, nominee)
@@ -16,36 +10,57 @@ const OscarCategory = ({ category, selectedNominees, setSelectedNominees }) => {
     }
 
     return (<div className="oscars-category">
-        <h2>{t(category.name)}</h2>
-        <div className="oscars-category-container">
-            <div
-                className="oscars-category-photo"
-                style={{
-                    backgroundImage: `url(${(categoryNominee && !hoveringImage) ? categoryNominee.image : hoveringImage})`
-                }}
-            />
-            <div className="oscars-nominees-list">
-                {category.nominees.map(nominee => <div
-                    className={"oscars-nominee" + (selectedNominees[category.name]?.winner === nominee.winner ? ' selected' : '')}
-                    onMouseOver={() => setHoveringImage(nominee.image)}
-                    onMouseOut={() => setHoveringImage()}
-                >
-                    <input
-                        type="radio"
-                        id={category.name + nominee.winner}
-                        name={category.name}
-                        value={category.name + nominee.winner}
-                        onChange={() => handleSelect(category.name, nominee)}
-                        checked={selectedNominees[category.name]?.winner === nominee.winner}
-                    />
-                    <label for={category.name + nominee.winner}>{nominee.winner} {nominee.film && <span><i>{t('for')}</i> <b>{nominee.film}</b> </span>} {nominee.reciever && <span><i>({nominee.originalTitle && <span><b>{nominee.originalTitle}</b>, </span>}{nominee.reciever})</i></span>} </label>
+        <h3>{t(category.name)}</h3>
 
-                    <br />
-                </div>)}
+        {category.nominees.map(nominee => <div
+            className={"oscars-nominee" + (selectedNominees[category.name]?.winner === nominee.winner ? ' selected' : '')}
+            onClick={() => handleSelect(category.name, nominee)}
+            style={selectedNominees[category.name]?.winner === nominee.winner ? {
+                height: '181px',
+                backgroundImage: `url(${nominee.image})`
+            } : {}}
+        >
+            <div className="nominee-opacity">
+                <div className="nominee-data">
+                    <h4
+                        style={selectedNominees[category.name]?.winner === nominee.winner ? {
+                            fontSize: '20px'
+                        } : {}}
+                    >
+                        {nominee.winner}
+                    </h4>
+                    {nominee.originalTitle &&
+                        <h5
+                            style={selectedNominees[category.name]?.winner === nominee.winner ? {
+                                fontSize: '14px'
+                            } : {}}
+                        >
+                            <i><b>{nominee.originalTitle}</b></i>
+                        </h5>}
+                    {nominee?.film && <>
+                        <h5
+                            style={selectedNominees[category.name]?.winner === nominee.winner ? {
+                                fontSize: '14px'
+                            } : {}}
+                        >
+                            {nominee.film}
+                        </h5>
+                    </>}
+                    {nominee.reciever && <>
+                        <h5
+                            style={selectedNominees[category.name]?.winner === nominee.winner ? {
+                                fontSize: '14px'
+                            } : {}}
+                        >
+                            {nominee.reciever}
+                        </h5>
+                    </>}
+                </div>
             </div>
-        </div>
-
+        </div>)}
     </div>)
+
+
 }
 
 export default OscarCategory

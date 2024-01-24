@@ -1,6 +1,6 @@
-import './Ballots.css';
 
-const HorizontalBallot = ({ divRef, categories, selectedNominees, userName }) => {
+
+const VerticalBallot = ({ divRef, categories, selectedNominees, userName }) => {
 
     const categoryNames = {
         "picture": "Best Picture",
@@ -15,7 +15,7 @@ const HorizontalBallot = ({ divRef, categories, selectedNominees, userName }) =>
         "editing": "Film Editing",
     }
 
-    return <div className="oscars-ballot-horizontal" ref={divRef}>
+    return <div className="oscars-ballot-vertical" ref={divRef}>
         <h2>{userName ? userName + "'s" : 'My'} 2024 Oscars Ballot</h2>
         <div className="ballot-content">
             {categories.map((category, index) => <div
@@ -25,20 +25,20 @@ const HorizontalBallot = ({ divRef, categories, selectedNominees, userName }) =>
                 }}
             >
                 <div className="image-opacity">
-                <div className="film-data">
-                    <h6>{categoryNames[category.name]}</h6>
-                    <h3>{selectedNominees[category.name]?.winner}</h3>
-                    {selectedNominees[category.name]?.originalTitle &&
-                        <h4><i><b>{selectedNominees[category.name]?.originalTitle}</b></i></h4>}
-                    {selectedNominees[category.name]?.film && <>
-                        <h4>{selectedNominees[category.name]?.film}</h4>
-                    </>}
-                    {selectedNominees[category.name]?.reciever && <>
-                        <h4>{selectedNominees[category.name]?.reciever}</h4>
-                    </>}
+                    <div className="film-data">
+                        <h6>{categoryNames[category.name]}</h6>
+                        <h3>{selectedNominees[category.name]?.winner}</h3>
+                        {selectedNominees[category.name]?.originalTitle &&
+                            <h4><i><b>{selectedNominees[category.name]?.originalTitle}</b></i></h4>}
+                        {selectedNominees[category.name]?.film && <>
+                            <h4>{selectedNominees[category.name]?.film}</h4>
+                        </>}
+                        {selectedNominees[category.name]?.reciever && <>
+                            <h4>{selectedNominees[category.name]?.reciever}</h4>
+                        </>}
+                    </div>
                 </div>
-                </div>
-                
+
 
             </div>)}
 
@@ -47,4 +47,4 @@ const HorizontalBallot = ({ divRef, categories, selectedNominees, userName }) =>
     </div>
 }
 
-export default HorizontalBallot;
+export default VerticalBallot;

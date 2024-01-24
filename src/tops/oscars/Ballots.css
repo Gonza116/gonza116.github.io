@@ -1,0 +1,150 @@
+/* Ballots */
+
+.hidden-elements {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.oscars-ballot-horizontal {
+    background-color: var(--oscars-black);
+    font-family: 'Familjen Grotesk';
+    width: 1920px !important;
+    max-width: 1920px;
+    height: 1080px;
+    max-height: 1080px;
+    overflow: hidden;
+
+    color: white;
+    padding: 30px;
+
+    .oscars-category-container.big {
+        width: 919px;
+        max-width: 919px;
+    }
+
+    .oscars-category-container.small {
+        width: 450px;
+        max-width: 450px;
+
+    }
+
+    .oscars-category-container {
+        height: 297px;
+        max-height: 297px;
+    }
+}
+
+.oscars-ballot-vertical {
+    background-color: var(--oscars-black);
+    font-family: 'Familjen Grotesk';
+    width: 1080px !important;
+    max-width: 1080px;
+    height: 1920px;
+    max-height: 1920px;
+    overflow: hidden;
+
+    color: white;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .oscars-category-container.big {
+        width: 1020px;
+        max-width: 1020px;
+    }
+
+    .oscars-category-container.small {
+        width: 499px;
+        max-width: 499px;
+
+    }
+
+    .oscars-category-container {
+        height: 224px;
+        max-height: 224px;
+        background-position: 0 -30px;
+    }
+}
+
+
+.oscars-category-container.not-selected {
+    opacity: 0.4;
+}
+
+h2 {
+    margin-block-start: 0;
+    font-size: 40px;
+    margin-block-end: 16px;
+}
+
+.ballot-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+
+.oscars-category-container {
+    border-radius: 18px;
+    border: 1px solid var(--oscars-gray);
+    background: var(--oscars-gray);
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+    h3,
+    h4,
+    h6 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    h6 {
+        color: var(--oscars-gold);
+        font-family: "Familjen Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.image-opacity {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 14px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--oscars-gray);
+    background: radial-gradient(#00000000, #181E248C, #181E24 80%);
+}
+
+.film-data {
+    padding: 20px;
+}
+
+.watermark {
+    text-align: right;
+    opacity: 0.75;
+}

@@ -27,5 +27,17 @@
 	"international": "Película Internacional",
 	"photography": "Fotografía",
 	"editing": "Edición",
-	"for": "por"
+	"for": "por",
+	"oscarBallotTitleNoName": "Mis favoritos para los Oscars {{year}}",
+	"oscarBallotTitleName": "Los favoritos de {{name}} para los Oscars {{year}}",
+	"enterName": "Introduce tu nombre",
+	"next": "Siguiente",
+	"skip": "Saltar",
+	"back": "Atrás",
+	"finish": "Terminar",
+	"generate": "Todo listo, ahora puedes generar tu papeleta",
+	"horizontalTitle": "Imagen horizontal",
+	"horizontalDescription": "Perfecta para twitter, un email, myspace...",
+	"verticalTitle": "Imagen vertical",
+	"verticalDescription": "Genial para una story instagram... snapchat? tiktok?"
 }

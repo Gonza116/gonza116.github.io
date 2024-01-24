@@ -27,5 +27,16 @@
 	"international": "International Feature Film",
 	"photography": "Cinematography",
 	"editing": "Film Editing",
-	"for": "for"
+	"oscarBallotTitleNoName": "My {{year}} Oscars Ballot",
+	"oscarBallotTitleName": "{{name}} {{year}} Oscars Ballot",
+	"enterName": "Enter your name",
+	"next": "Next",
+	"skip": "Skip",
+	"back": "Back",
+	"finish": "Finish",
+	"generate": "All is said and done, now you can generate your ballot",
+	"horizontalTitle": "Horizontal image",
+	"horizontalDescription": "Perfect for twitter, an email, myspace...",
+	"verticalTitle": "Vertical image",
+	"verticalDescription": "Great for instagram stories... snapchat? tiktok?"
 }
