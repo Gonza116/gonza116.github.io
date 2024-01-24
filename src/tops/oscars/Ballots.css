@@ -137,7 +137,7 @@ h2 {
     height: 100%;
     overflow: hidden;
     border: 1px solid var(--oscars-gray);
-    background: radial-gradient(#00000000, #181E248C, #181E24 80%);
+    background: var(--oscars-radial-gradient)
 }
 
 .film-data {

@@ -39,5 +39,6 @@
 	"horizontalDescription": "Perfect for twitter, an email, myspace...",
 	"verticalTitle": "Vertical image",
 	"verticalDescription": "Great for instagram stories... snapchat? tiktok?",
-	"finalNote": "Please note that the final image might have some bugs, specially with the gradients. The library I'm using has some problem with them, sorry :("
+	"finalNote": "Please note that the final image might have some bugs, specially with the gradients. The library I'm using has some problem with them, sorry :(",
+	"warning":"Due to CORS issues in some browser, the image generator library may fail. I know this happens with iOS >= 17, if when generating the ballot you get a 0kB file, that's why."
 }

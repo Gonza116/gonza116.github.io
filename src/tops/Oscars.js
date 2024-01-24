@@ -75,6 +75,7 @@ const Oscars = () => {
             <Navbar />
             <div className="oscars-election-container">
                 <h2>{userName ? t('oscarBallotTitleName', { name: userName, year: '2024' }) : t('oscarBallotTitleNoName', { year: '2024' })} </h2>
+
                 <div className="oscars-election-content">
                     {step === 0 ? <div className="name-input">
                         <p>{t('enterName')}</p>
@@ -112,6 +113,10 @@ const Oscars = () => {
                 </div>
 
                 <div />
+
+                {step === 0 &&
+                    <i>{t('warning')}</i>
+                }
 
                 <div>
                     {step <= categories.length ? <div className="buttons-row">

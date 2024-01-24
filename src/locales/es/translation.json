@@ -40,5 +40,6 @@
 	"horizontalDescription": "Perfecta para twitter, un email, myspace...",
 	"verticalTitle": "Imagen vertical",
 	"verticalDescription": "Genial para una story instagram... snapchat? tiktok?",
-	"finalNote": "Ten en cuenta que la imagen final puede tener algunos bugs, sobre todo con los degradados. La librería que estoy usando se lleva regular con ellos, lo siento :("
+	"finalNote": "Ten en cuenta que la imagen final puede tener algunos bugs, sobre todo con los degradados. La librería que estoy usando se lleva regular con ellos, lo siento :(",
+	"warning":"Por problemas de CORS en algunos navegadores, la librería de generación de la imagen puede fallar. Esto es seguro en iOS >= 17, si al generar la imagen obtienes un archivo de 0kB es por eso."
 }
