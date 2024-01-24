@@ -21,6 +21,11 @@ const Navbar = ({ home = false, setEventList }) => {
 						{t("tops-music")}
 					</a>
 				</div>
+				<div className="navbar-item">
+					<a className="bold-link" href={"/#/tops/oscars"}>
+						{t("oscars")}
+					</a>
+				</div>
 			</nav>
 		);
 	} else {
