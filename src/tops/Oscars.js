@@ -59,8 +59,6 @@ const Oscars = () => {
         document.body.removeChild(link);
     }
 
-    console.log(step, categories.length)
-
     const skipStep = () => {
         if (step === 0) {
             setUserName('')
@@ -105,6 +103,7 @@ const Oscars = () => {
                                         <p>{t('verticalDescription')}</p>
                                     </div>
                                 </div>
+                                <i>{t('finalNote')}</i>
 
                             </div>}
 

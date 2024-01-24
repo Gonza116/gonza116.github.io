@@ -39,5 +39,6 @@
 	"horizontalTitle": "Imagen horizontal",
 	"horizontalDescription": "Perfecta para twitter, un email, myspace...",
 	"verticalTitle": "Imagen vertical",
-	"verticalDescription": "Genial para una story instagram... snapchat? tiktok?"
+	"verticalDescription": "Genial para una story instagram... snapchat? tiktok?",
+	"finalNote": "Ten en cuenta que la imagen final puede tener algunos bugs, sobre todo con los degradados. La librería que estoy usando se lleva regular con ellos, lo siento :("
 }

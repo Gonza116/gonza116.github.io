@@ -148,3 +148,12 @@ h2 {
     text-align: right;
     opacity: 0.75;
 }
+
+p.watermark {
+    margin-block: 0;
+    margin-right: 60px;
+}
+
+p.watermark:first-of-type {
+    margin-top: 16px;
+}

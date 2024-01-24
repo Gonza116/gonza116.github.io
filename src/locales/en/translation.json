@@ -38,5 +38,6 @@
 	"horizontalTitle": "Horizontal image",
 	"horizontalDescription": "Perfect for twitter, an email, myspace...",
 	"verticalTitle": "Vertical image",
-	"verticalDescription": "Great for instagram stories... snapchat? tiktok?"
+	"verticalDescription": "Great for instagram stories... snapchat? tiktok?",
+	"finalNote": "Please note that the final image might have some bugs, specially with the gradients. The library I'm using has some problem with them, sorry :("
 }
