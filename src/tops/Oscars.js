@@ -114,11 +114,12 @@ const Oscars = () => {
 
                 <div />
 
-                {step === 0 &&
-                    <i>{t('warning')}</i>
-                }
 
-                <div>
+
+                <div className="oscars-footer">
+                    {step === 0 &&
+                        <i>{t('warning')}</i>
+                    }
                     {step <= categories.length ? <div className="buttons-row">
                         {step > 0 && <button className="back" onClick={() => setStep(step - 1)}>{t('back')}</button>}
                         <button className="skip" onClick={skipStep}>{t('skip')}</button>
