@@ -5,7 +5,6 @@ const Event = ({ explanation, date, title, technologies, type, key }) => {
 	const { t } = useTranslation();
 
 	const getTechnologyBadges = () => {
-		console.log(technologies);
 		if (technologies) {
 			return (
 				<ul>

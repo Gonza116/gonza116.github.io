@@ -5,7 +5,6 @@ const OscarCategory = ({ category, selectedNominees, setSelectedNominees }) => {
     const { t } = useTranslation();
 
     const handleSelect = (name, nominee) => {
-        console.log(name, selectedNominees, nominee)
         setSelectedNominees({ ...selectedNominees, [name]: nominee })
     }
 
