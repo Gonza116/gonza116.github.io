@@ -1,94 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap%27");
 
 :root {
-	--blue: #1480ff;
-	--blue-background: #1480ff1a;
-	--red: #f06648;
-	--red-background: #f066481a;
-	--background: #eae5da;
-	/* year top colors
+    --blue: #1480ff;
+    --blue-background: #1480ff1a;
+    --red: #f06648;
+    --red-background: #f066481a;
+    --background: #eae5da;
+    /* year top colors
 	bg = pantone color of the year
 	tx = enter in coolors and choose combining color putting the bg color in the middle column */
-	--covers-brightness: 100%;
-	--twenty-three-bg: #bb2649;
-	--twenty-three-tx: #040926;
-	--twenty-two-bg: #6868ab;
-	--twenty-two-tx: #ff934f;
-	--twenty-one-bg: #f5df4d;
-	--twenty-one-tx: #939597;
-	--twenty-bg: #0f4c81;
-	--twenty-tx: #fbf2c0;
-	--nineteen-bg: #fa7268;
-	--nineteen-tx: #028090;
-	--eighteen-bg: #645394;
-	--eighteen-tx: #f8c630;
-	--seventeen-bg: #88b049;
-	--seventeen-tx: #413c58;
-	/* oscars */
-	--oscars-gold: #d7a320;
-	--oscars-white: #FFFFFF;
-	--oscars-black: #101215;
-	--oscars-gray: #181E24;
-	--oscars-radial-gradient: radial-gradient(#00000000, #181E248C, #181E24 80%);
+    --covers-brightness: 100%;
+    --twenty-five-bg: #a47864;
+    --twenty-five-tx: #39375b;
+    --twenty-four-bg: #ffbe98;
+    --twenty-four-tx: #587d71;
+    --twenty-three-bg: #bb2649;
+    --twenty-three-tx: #040926;
+    --twenty-two-bg: #6868ab;
+    --twenty-two-tx: #ff934f;
+    --twenty-one-bg: #f5df4d;
+    --twenty-one-tx: #939597;
+    --twenty-bg: #0f4c81;
+    --twenty-tx: #fbf2c0;
+    --nineteen-bg: #fa7268;
+    --nineteen-tx: #028090;
+    --eighteen-bg: #645394;
+    --eighteen-tx: #f8c630;
+    --seventeen-bg: #88b049;
+    --seventeen-tx: #413c58;
+    /* oscars */
+    --oscars-gold: #d7a320;
+    --oscars-white: #ffffff;
+    --oscars-black: #101215;
+    --oscars-gray: #181e24;
+    --oscars-radial-gradient: radial-gradient(
+        #00000000,
+        #181e248c,
+        #181e24 80%
+    );
 }
 
 [data-theme="dark"] {
-	--blue: #3ea2ff;
-	--blue-background: #3ea2ff1a;
-	--red: #a8412a;
-	--red-background: #a8412a1a;
-	--background: #241e18;
-	/* original colors dimmed 50% using this web https://pinetools.com/darken-color */
-	--covers-brightness: 70%;
-	--twenty-three-bg: #5d1324;
-	--twenty-three-tx: #020413;
-	--twenty-two-bg: #313158;
-	--twenty-two-tx: #a74000;
-	--twenty-one-bg: #988508;
-	--twenty-one-tx: #494a4b;
-	--twenty-bg: #072640;
-	--twenty-tx: #d0b20d;
-	--nineteen-bg: #ab1105;
-	--nineteen-tx: #004048;
-	--eighteen-bg: #32294a;
-	--eighteen-tx: #8f6c04;
-	--seventeen-bg: #445824;
-	--seventeen-tx: #201d2c;
-	/* oscars */
-	--oscars-gold: #d7a320;
-	--oscars-white: #FFFFFF;
-	--oscars-black: #101215;
-	--oscars-gray: #181E24;
-	--oscars-radial-gradient: radial-gradient(#00000000, #181E248C, #181E24 80%);
+    --blue: #3ea2ff;
+    --blue-background: #3ea2ff1a;
+    --red: #a8412a;
+    --red-background: #a8412a1a;
+    --background: #241e18;
+    /* original colors dimmed 50% using this web https://pinetools.com/darken-color */
+    --twenty-five-bg: #533b30;
+    --twenty-five-tx: #1c1b2d;
+    --twenty-four-bg: #cb4b00;
+    --twenty-four-tx: #2b3e38;
+    --covers-brightness: 70%;
+    --twenty-three-bg: #5d1324;
+    --twenty-three-tx: #020413;
+    --twenty-two-bg: #313158;
+    --twenty-two-tx: #a74000;
+    --twenty-one-bg: #988508;
+    --twenty-one-tx: #494a4b;
+    --twenty-bg: #072640;
+    --twenty-tx: #d0b20d;
+    --nineteen-bg: #ab1105;
+    --nineteen-tx: #004048;
+    --eighteen-bg: #32294a;
+    --eighteen-tx: #8f6c04;
+    --seventeen-bg: #445824;
+    --seventeen-tx: #201d2c;
+    /* oscars */
+    --oscars-gold: #d7a320;
+    --oscars-white: #ffffff;
+    --oscars-black: #101215;
+    --oscars-gray: #181e24;
+    --oscars-radial-gradient: radial-gradient(
+        #00000000,
+        #181e248c,
+        #181e24 80%
+    );
 }
 
 body {
-	color: var(--blue);
-	background-color: var(--background);
-	margin: 0;
-	font-family: "Public Sans", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	transition: background-color ease 0.2s;
+    color: var(--blue);
+    background-color: var(--background);
+    margin: 0;
+    font-family: "Public Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color ease 0.2s;
 }
 
 a {
-	transition: color ease 0.2s;
+    transition: color ease 0.2s;
 }
 
 a:link {
-	color: var(--blue);
+    color: var(--blue);
 }
 
 a:visited {
-	color: var(--blue);
+    color: var(--blue);
 }
 
 a:hover {
-	color: var(--red);
+    color: var(--red);
 }
 
 a:active {
-	color: var(--red);
+    color: var(--red);
 }
-

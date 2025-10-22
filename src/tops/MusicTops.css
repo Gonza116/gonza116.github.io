@@ -1,162 +1,192 @@
 /* Mobile */
 
 .tops-containers {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 .year-title {
-	font-size: 72px;
+    font-size: 72px;
 }
 
 .year-scroll {
-	overflow-y: hidden;
-	display: flex;
-	align-items: baseline;
-	flex-direction: row;
-	gap: 2em;
-	padding-right: 2em;
+    overflow-y: hidden;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 2em;
+    padding-right: 2em;
 }
 
 .year-row {
-	display: flex;
-	flex-direction: column;
-	padding: 2em;
-	padding-right: 0;
-	width: 95vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-right: 0;
+    width: 95vw;
 }
 
 .top-1-cover {
-	width: 200px;
-	height: 200px;
-	filter: brightness(var(--covers-brightness));
-	transition: filter ease 0.2s;
+    width: 200px;
+    height: 200px;
+    filter: brightness(var(--covers-brightness));
+    transition: filter ease 0.2s;
 }
 
 .top-podium-cover {
-	width: 175px;
-	height: 175px;
-	filter: brightness(var(--covers-brightness));
-	transition: filter ease 0.2s;
+    width: 175px;
+    height: 175px;
+    filter: brightness(var(--covers-brightness));
+    transition: filter ease 0.2s;
 }
 
 .cover {
-	width: 150px;
-	height: 150px;
-	filter: brightness(var(--covers-brightness));
-	transition: filter ease 0.2s;
+    width: 150px;
+    height: 150px;
+    filter: brightness(var(--covers-brightness));
+    transition: filter ease 0.2s;
 }
 
 /* Desktop */
 @media only screen and (min-width: 801px) {
-	.tops-containers {
-		margin-top: 1em;
-	}
+    .tops-containers {
+        margin-top: 1em;
+    }
 
-	.year-title {
-		transform: rotate(-90deg);
-		font-size: 156px;
-		width: 20%;
-		margin-left: -0.5em;
-	}
+    .year-title {
+        transform: rotate(-90deg);
+        font-size: 156px;
+        width: 20%;
+        margin-left: -0.5em;
+    }
 
-	.year-scroll {
-		overflow-y: hidden;
-		display: flex;
-		align-items: baseline;
-		flex-direction: row;
-		gap: 2em;
-		padding-right: 2em;
-	}
+    .year-scroll {
+        overflow-y: hidden;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        gap: 2em;
+        padding-right: 2em;
+    }
 
-	.year-row {
-		display: flex;
-		align-items: center;
-		flex-direction: row;
-		padding: 2em;
-		width: 99vw;
-	}
+    .year-row {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 2em;
+        width: 99vw;
+    }
 
-	.top-1-cover {
-		width: 400px;
-		height: 400px;
-		filter: brightness(var(--covers-brightness));
-		transition: filter ease 0.2s;
-	}
+    .top-1-cover {
+        width: 400px;
+        height: 400px;
+        filter: brightness(var(--covers-brightness));
+        transition: filter ease 0.2s;
+    }
 
-	.top-podium-cover {
-		width: 300px;
-		height: 300px;
-		filter: brightness(var(--covers-brightness));
-		transition: filter ease 0.2s;
-	}
+    .top-podium-cover {
+        width: 300px;
+        height: 300px;
+        filter: brightness(var(--covers-brightness));
+        transition: filter ease 0.2s;
+    }
 
-	.cover {
-		width: 200px;
-		height: 200px;
-		filter: brightness(var(--covers-brightness));
-		transition: filter ease 0.2s;
-	}
+    .cover {
+        width: 200px;
+        height: 200px;
+        filter: brightness(var(--covers-brightness));
+        transition: filter ease 0.2s;
+    }
 }
 
 .album-data-container {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
 .album-position {
-	font-size: 3em;
-	margin-block-start: 0;
-	margin-block-end: 0;
+    font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .artist-name {
-	margin-block-end: 0.5em;
-	font-weight: 700;
+    margin-block-end: 0.5em;
+    font-weight: 700;
 }
 
 .album-name {
-	margin-block-start: 0.5em;
-	font-style: italic;
+    margin-block-start: 0.5em;
+    font-style: italic;
+}
+
+.twenty-five {
+    background-color: var(--twenty-five-bg);
+    color: var(--twenty-five-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
+}
+
+.twenty-four {
+    background-color: var(--twenty-four-bg);
+    color: var(--twenty-four-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
 
 .twenty-three {
-	background-color: var(--twenty-three-bg);
-	color: var(--twenty-three-tx);
-	transition: background-color ease 0.2s, color ease 0.2s;
+    background-color: var(--twenty-three-bg);
+    color: var(--twenty-three-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
 
 .twenty-two {
-	background-color: var(--twenty-two-bg);
-	color: var(--twenty-two-tx);
-	transition: background-color ease 0.2s, color ease 0.2s;
+    background-color: var(--twenty-two-bg);
+    color: var(--twenty-two-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
 
 .twenty-one {
-	background-color: var(--twenty-one-bg);
-	color: var(--twenty-one-tx);
-	transition: background-color ease 0.2s, color ease 0.2s;
+    background-color: var(--twenty-one-bg);
+    color: var(--twenty-one-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
 
 .twenty {
-	background-color: var(--twenty-bg);
-	color: var(--twenty-tx);
-	transition: background-color ease 0.2s, color ease 0.2s;
+    background-color: var(--twenty-bg);
+    color: var(--twenty-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
 
 .nineteen {
-	background-color: var(--nineteen-bg);
-	color: var(--nineteen-tx);
-	transition: background-color ease 0.2s, color ease 0.2s;
+    background-color: var(--nineteen-bg);
+    color: var(--nineteen-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
 
 .eighteen {
-	background-color: var(--eighteen-bg);
-	color: var(--eighteen-tx);
-	transition: background-color ease 0.2s, color ease 0.2s;
+    background-color: var(--eighteen-bg);
+    color: var(--eighteen-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
 
 .seventeen {
-	background-color: var(--seventeen-bg);
-	color: var(--seventeen-tx);
-	transition: background-color ease 0.2s, color ease 0.2s;
+    background-color: var(--seventeen-bg);
+    color: var(--seventeen-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
 }
