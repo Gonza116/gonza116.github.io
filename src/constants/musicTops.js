@@ -1,3 +1,184 @@
+export const twentyFive = {
+  year: "2025",
+  albums: [
+    {
+      position: 1,
+      artist: "Oklou",
+      name: "choke enough",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/48/ba/1e48ba16-4ee3-8ae5-742d-f6849dd8f2d7/850064074949_Cover.jpg/600x600bb.jpg",
+    },
+    {
+      position: 2,
+      artist: "rusowsky",
+      name: "DAISY",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/15/7a/b1/157ab166-5170-572f-c076-36010aad7d03/093624833734.jpg/600x600bb.jpg",
+    },
+    {
+      position: 3,
+      artist: "Parcels",
+      name: "LOVED",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/17/dc/43/17dc433f-27cb-3cd7-1469-2184ae99b7b2/5056556160120_cover.jpg/600x600bb.jpg",
+    },
+    {
+      position: 4,
+      artist: "Amaia",
+      name: "Si Abro Los Ojos No Es Real",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/d3/82/c5d38265-9bd7-88aa-3bb3-9500eceed9d6/24UM1IM01951.rgb.jpg/600x600bb.jpg",
+    },
+    {
+      position: 5,
+      artist: "Balu Brigada",
+      name: "Portal",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0d/32/eb/0d32eb6a-1687-8bfb-43c1-7d49864b3186/5021732825995.jpg/600x600bb.jpg",
+    },
+    {
+      position: 6,
+      artist: "CA7RIEL & Paco Amoroso",
+      name: "PAPOTA",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/5e/15/b15e15e0-f611-c93a-409d-e170a0e27743/196872846911.jpg/600x600bb.jpg",
+    },
+    {
+      position: 7,
+      artist: "Lorde",
+      name: "Virgin",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/3c/07/723c07a7-4ff6-b052-927d-6997fff13676/25UMGIM60545.rgb.jpg/600x600bb.jpg",
+    },
+    {
+      position: 8,
+      artist: "ROSALÍA",
+      name: "LUX",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ae/80/95ae8046-a6b9-e493-0def-5ae33d63f43a/196873722672.jpg/600x600bb.jpg",
+    },
+    {
+      position: 9,
+      artist: "Rakky Ripper",
+      name: "Para que salga el Sol",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/63/c9/94/63c9944d-8f53-b3e8-c716-b4bbefc9a4f3/5034644610726.jpg/600x600bb.jpg",
+    },
+    {
+      position: 10,
+      artist: "Passengerprincess",
+      name: "PASSENGERPRINCESS",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/40/04/2a40046b-b036-6833-1df6-39c08d0d35ef/artwork.jpg/600x600bb.jpg",
+    },
+    {
+      position: 11,
+      artist: "Jane Remover",
+      name: "Revengeseekerz",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/18/cf/f6/18cff6df-c7b6-0ca1-8067-83743f6c1f8a/193436418720_coverGriffinMcMahon.jpg/600x600bb.jpg",
+    },
+    {
+      position: 12,
+      artist: "Blood Orange",
+      name: "Essex Honey",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/15/b5/61/15b56142-10d6-f9d3-f29d-e0e0d123061d/196873161457.jpg/600x600bb.jpg",
+    },
+    {
+      position: 13,
+      artist: "PinkPantheress",
+      name: "Fancy That",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/12/db/5a/12db5a38-94c1-42bc-b36b-7204b7aa4eac/5021732768650.jpg/600x600bb.jpg",
+    },
+    {
+      position: 14,
+      artist: "shego",
+      name: "No Lo Volveré A Hacer",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/34/4e/0f344ee2-56a4-cf13-d2ca-b460fd6f9e36/8436611251050.jpg/600x600bb.jpg",
+    },
+    {
+      position: 15,
+      artist: "La Plata",
+      name: "Interzona",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/31/c7/d831c7d1-764d-7018-8a5b-e567c92ff3e5/25UMGIM01202.rgb.jpg/600x600bb.jpg",
+    },
+    {
+      position: 16,
+      artist: "Tyler, The Creator",
+      name: "DON'T TAP THE GLASS",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/ae/e6/a0aee657-b365-fed2-249c-0f22efa507d0/196873435435.jpg/600x600bb.jpg",
+    },
+    {
+      position: 17,
+      artist: "Joey Valence & Brae",
+      name: "HYPERYOUTH",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0e/f0/e7/0ef0e779-f0cb-b783-d381-1133eb4736dc/196873327051.jpg/600x600bb.jpg",
+    },
+    {
+      position: 18,
+      artist: "Lily Allen",
+      name: "West End Girl",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d7/d9/9e/d7d99eca-a4ec-80c1-afec-379a26af58c6/4099964193565.jpg/600x600bb.jpg",
+    },
+    {
+      position: 19,
+      artist: "SPELLLING",
+      name: "Portrait of My Heart",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/6b/0d/f96b0d59-4c84-b47d-bd7b-480075d64992/50786.jpg/600x600bb.jpg",
+    },
+    {
+      position: 20,
+      artist: "FKA twigs",
+      name: "EUSEXUA",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/c8/24/aec824cf-8748-fb40-12c8-b7fb69a5ffe3/075679634382.jpg/600x600bb.jpg",
+    },
+    {
+      position: 21,
+      artist: "Racing Mount Pleasant",
+      name: "Racing Mount Pleasant",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/2d/4b/b92d4b0b-d8d8-fdee-b14b-2a9de71e1b2d/198704605284_Cover.jpg/600x600bb.jpg",
+    },
+    {
+      position: 22,
+      artist: "Men I Trust",
+      name: "Equus Caballus",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/2d/f5/662df515-7dff-1012-ccf4-08822f6ac11b/artwork.jpg/600x600bb.jpg",
+    },
+    {
+      position: 23,
+      artist: "Turnstile",
+      name: "NEVER ENOUGH",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/1c/28/d11c28a8-0e83-41c3-afc7-b873dd7be188/075679614896.jpg/600x600bb.jpg",
+    },
+    {
+      position: 24,
+      artist: "Addison Rae",
+      name: "Addison",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cf/4a/e3/cf4ae3c9-3420-6021-f059-cc6c87cf11b2/196872958249.jpg/600x600bb.jpg",
+    },
+    {
+      position: 25,
+      artist: "Black Country, New Road",
+      name: "Forever Howlong",
+      cover:
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f7/08/ac/f708ac5d-4553-4253-dcd3-11c61327a532/5054429199741.png/600x600bb.jpg",
+    },
+  ],
+};
+
 export const twentyFour = {
   year: "2024",
   albums: [

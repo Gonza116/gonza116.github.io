@@ -10,6 +10,8 @@
 	bg = pantone color of the year
 	tx = enter in coolors and choose combining color putting the bg color in the middle column */
     --covers-brightness: 100%;
+    --twenty-six-bg: #f0eee9;
+    --twenty-six-tx: #2f243a;
     --twenty-five-bg: #a47864;
     --twenty-five-tx: #39375b;
     --twenty-four-bg: #ffbe98;
@@ -47,6 +49,8 @@
     --red-background: #a8412a1a;
     --background: #241e18;
     /* original colors dimmed 50% using this web https://pinetools.com/darken-color */
+    --twenty-six-bg: #8c7f5f;
+    --twenty-six-tx: #17121d;
     --twenty-five-bg: #533b30;
     --twenty-five-tx: #1c1b2d;
     --twenty-four-bg: #cb4b00;

@@ -119,6 +119,14 @@
     font-style: italic;
 }
 
+.twenty-six {
+    background-color: var(--twenty-six-bg);
+    color: var(--twenty-six-tx);
+    transition:
+        background-color ease 0.2s,
+        color ease 0.2s;
+}
+
 .twenty-five {
     background-color: var(--twenty-five-bg);
     color: var(--twenty-five-tx);
